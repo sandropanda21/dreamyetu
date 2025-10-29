@@ -1,7 +1,5 @@
 import { useTranslation } from 'react-i18next';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -43,9 +41,7 @@ const Contact = () => {
   ];
 
   return (
-    <div className="min-h-screen">
-      <Navbar />
-
+    <>
       {/* Hero Section */}
       <section className="pt-32 pb-20 gradient-hero">
         <div className="container mx-auto px-4 text-center">
@@ -183,9 +179,7 @@ const Contact = () => {
       >
         <Phone className="w-7 h-7 text-white" />
       </a>
-
-      <Footer />
-    </div>
+    </>
   );
 };
 

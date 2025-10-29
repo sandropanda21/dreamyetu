@@ -1,7 +1,5 @@
 import { useTranslation } from 'react-i18next';
 import { GraduationCap, Home as HomeIcon, Heart, Building2 } from 'lucide-react';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
 import Hero from '@/components/Hero';
 import ServiceCard from '@/components/ServiceCard';
 import TestimonialCard from '@/components/TestimonialCard';
@@ -58,9 +56,7 @@ const Home = () => {
   ];
 
   return (
-    <div className="min-h-screen">
-      <Navbar />
-      
+    <>
       {/* Hero Section with Parallax */}
       <Hero />
 
@@ -120,9 +116,7 @@ const Home = () => {
           </a>
         </div>
       </section>
-
-      <Footer />
-    </div>
+    </>
   );
 };
 

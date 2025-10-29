@@ -10,8 +10,6 @@ import {
   Building2,
   Microscope,
 } from 'lucide-react';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
 import ServiceCard from '@/components/ServiceCard';
 
 const Services = () => {
@@ -75,9 +73,7 @@ const Services = () => {
   ];
 
   return (
-    <div className="min-h-screen">
-      <Navbar />
-
+    <>
       {/* Hero Section */}
       <section className="pt-32 pb-20 gradient-hero">
         <div className="container mx-auto px-4 text-center">
@@ -167,9 +163,7 @@ const Services = () => {
           </div>
         </div>
       </section>
-
-      <Footer />
-    </div>
+    </>
   );
 };
 

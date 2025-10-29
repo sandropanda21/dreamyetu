@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { X } from 'lucide-react';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import classroomImg from '@/assets/classroom.jpg';
 import capetownImg from '@/assets/capetown.jpg';
@@ -35,9 +33,7 @@ const Gallery = () => {
     filter === 'all' ? images : images.filter((img) => img.category === filter);
 
   return (
-    <div className="min-h-screen">
-      <Navbar />
-
+    <>
       {/* Hero Section */}
       <section className="pt-32 pb-20 gradient-hero">
         <div className="container mx-auto px-4 text-center">
@@ -112,9 +108,7 @@ const Gallery = () => {
           />
         </div>
       )}
-
-      <Footer />
-    </div>
+    </>
   );
 };
 

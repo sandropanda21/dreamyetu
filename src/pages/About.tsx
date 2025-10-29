@@ -1,7 +1,5 @@
 import { useTranslation } from 'react-i18next';
 import { Target, Eye, Heart } from 'lucide-react';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
 import { Card } from '@/components/ui/card';
 
 const About = () => {
@@ -14,9 +12,7 @@ const About = () => {
   ];
 
   return (
-    <div className="min-h-screen">
-      <Navbar />
-
+    <>
       {/* Hero Section */}
       <section className="pt-32 pb-20 gradient-hero">
         <div className="container mx-auto px-4 text-center">
@@ -100,9 +96,7 @@ const About = () => {
           </div>
         </div>
       </section>
-
-      <Footer />
-    </div>
+    </>
   );
 };
 

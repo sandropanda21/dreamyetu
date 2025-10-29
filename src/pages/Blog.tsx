@@ -1,7 +1,5 @@
 import { useTranslation } from 'react-i18next';
 import { Calendar, User, ArrowRight } from 'lucide-react';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import classroomImg from '@/assets/classroom.jpg';
@@ -54,9 +52,7 @@ const Blog = () => {
   ];
 
   return (
-    <div className="min-h-screen">
-      <Navbar />
-
+    <>
       {/* Hero Section */}
       <section className="pt-32 pb-20 gradient-hero">
         <div className="container mx-auto px-4 text-center">
@@ -114,9 +110,7 @@ const Blog = () => {
           </div>
         </div>
       </section>
-
-      <Footer />
-    </div>
+    </>
   );
 };
 
