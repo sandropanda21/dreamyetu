@@ -2,7 +2,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import heroImage from '@/assets/hero-education.jpg';
+import heroImage from '@/assets/infantil1.jpeg';
 import { useRef } from 'react';
 
 const Hero = () => {

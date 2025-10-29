@@ -4,8 +4,8 @@ import { X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import classroomImg from '@/assets/classroom.jpg';
 import capetownImg from '@/assets/capetown.jpg';
-import inclusionImg from '@/assets/inclusive-education.jpg';
-import heroImg from '@/assets/hero-education.jpg';
+import inclusionImg from '@/assets/infantil1.jpeg';
+import heroImg from '@/assets/infantil1.jpeg';
 
 const Gallery = () => {
   const { t } = useTranslation();
