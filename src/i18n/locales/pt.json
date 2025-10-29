@@ -1,0 +1,92 @@
+{
+  "nav": {
+    "home": "Início",
+    "services": "Serviços",
+    "about": "Sobre",
+    "gallery": "Galeria",
+    "blog": "Blog",
+    "contact": "Contacto",
+    "enroll": "Inscrever-se"
+  },
+  "hero": {
+    "title": "Sonhamos com uma Educação Melhor",
+    "subtitle": "Aprendizagem livre, segura e com propósito",
+    "cta1": "Conheça nossos Programas",
+    "cta2": "Fale Connosco"
+  },
+  "services": {
+    "title": "Nossos Serviços",
+    "subtitle": "Programas educativos inovadores para cada fase da vida",
+    "preschool": {
+      "title": "Educação Pré-Escolar",
+      "description": "Ensino bilíngue para crianças de 1 a 5 anos com aprendizagem criativa e sensorial"
+    },
+    "homeschooling": {
+      "title": "Homeschooling Certificado",
+      "description": "Educação flexível e certificada no conforto de casa, com apoio especializado"
+    },
+    "inclusion": {
+      "title": "Educação Inclusiva",
+      "description": "Apoio psicopedagógico e terapias para necessidades especiais"
+    },
+    "residence": {
+      "title": "Residência Cape Town",
+      "description": "Alojamento supervisionado para estudantes em Cape Town, África do Sul"
+    }
+  },
+  "testimonials": {
+    "title": "O Que Dizem Sobre Nós",
+    "subtitle": "Histórias reais de famílias que confiam na Dream Yetu"
+  },
+  "footer": {
+    "about": "Sobre a Dream Yetu",
+    "aboutText": "Instituição angolana dedicada ao desenvolvimento infantil e educação inovadora.",
+    "quickLinks": "Links Rápidos",
+    "contact": "Contacto",
+    "followUs": "Siga-nos",
+    "rights": "© 2025 Dream Yetu. Todos os direitos reservados."
+  },
+  "about": {
+    "title": "Sobre Nós",
+    "subtitle": "Conheça a história e missão da Dream Yetu",
+    "mission": "Missão",
+    "missionText": "Promover uma educação de qualidade, inclusiva e inovadora, respeitando o ritmo e as necessidades de cada criança.",
+    "vision": "Visão",
+    "visionText": "Ser referência em educação inovadora e desenvolvimento infantil em Angola e na África Austral.",
+    "values": "Valores",
+    "valuesText": "Amor, respeito, inovação, inclusão e excelência educativa."
+  },
+  "contact": {
+    "title": "Entre em Contacto",
+    "subtitle": "Estamos prontos para ajudar no desenvolvimento do seu filho",
+    "form": {
+      "name": "Nome Completo",
+      "email": "E-mail",
+      "phone": "Telefone",
+      "service": "Serviço de Interesse",
+      "message": "Mensagem",
+      "send": "Enviar Mensagem"
+    },
+    "info": {
+      "title": "Informações de Contacto",
+      "luanda": "Luanda, Angola",
+      "capetown": "Cape Town, África do Sul"
+    }
+  },
+  "gallery": {
+    "title": "Galeria",
+    "subtitle": "Momentos especiais da nossa comunidade educativa",
+    "filters": {
+      "all": "Todos",
+      "education": "Educação",
+      "events": "Eventos",
+      "capetown": "Cape Town",
+      "teachers": "Professores"
+    }
+  },
+  "blog": {
+    "title": "Blog & Notícias",
+    "subtitle": "Artigos sobre educação, parentalidade e inovação",
+    "readMore": "Ler mais"
+  }
+}

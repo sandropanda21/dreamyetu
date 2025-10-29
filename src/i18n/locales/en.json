@@ -1,0 +1,92 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "gallery": "Gallery",
+    "blog": "Blog",
+    "contact": "Contact",
+    "enroll": "Enroll Now"
+  },
+  "hero": {
+    "title": "We Dream of Better Education",
+    "subtitle": "Free, safe and purposeful learning",
+    "cta1": "Explore Our Programs",
+    "cta2": "Contact Us"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Innovative educational programs for every stage of life",
+    "preschool": {
+      "title": "Pre-School Education",
+      "description": "Bilingual education for children aged 1-5 with creative and sensory learning"
+    },
+    "homeschooling": {
+      "title": "Certified Homeschooling",
+      "description": "Flexible and certified education from home with specialized support"
+    },
+    "inclusion": {
+      "title": "Inclusive Education",
+      "description": "Psycho-pedagogical support and therapies for special needs"
+    },
+    "residence": {
+      "title": "Cape Town Residence",
+      "description": "Supervised accommodation for students in Cape Town, South Africa"
+    }
+  },
+  "testimonials": {
+    "title": "What People Say",
+    "subtitle": "Real stories from families who trust Dream Yetu"
+  },
+  "footer": {
+    "about": "About Dream Yetu",
+    "aboutText": "Angolan institution dedicated to child development and innovative education.",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "followUs": "Follow Us",
+    "rights": "© 2025 Dream Yetu. All rights reserved."
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Learn about Dream Yetu's story and mission",
+    "mission": "Mission",
+    "missionText": "To promote quality, inclusive and innovative education, respecting the pace and needs of each child.",
+    "vision": "Vision",
+    "visionText": "To be a reference in innovative education and child development in Angola and Southern Africa.",
+    "values": "Values",
+    "valuesText": "Love, respect, innovation, inclusion and educational excellence."
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "We are ready to help your child's development",
+    "form": {
+      "name": "Full Name",
+      "email": "Email",
+      "phone": "Phone",
+      "service": "Service of Interest",
+      "message": "Message",
+      "send": "Send Message"
+    },
+    "info": {
+      "title": "Contact Information",
+      "luanda": "Luanda, Angola",
+      "capetown": "Cape Town, South Africa"
+    }
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "Special moments from our educational community",
+    "filters": {
+      "all": "All",
+      "education": "Education",
+      "events": "Events",
+      "capetown": "Cape Town",
+      "teachers": "Teachers"
+    }
+  },
+  "blog": {
+    "title": "Blog & News",
+    "subtitle": "Articles about education, parenting and innovation",
+    "readMore": "Read more"
+  }
+}
