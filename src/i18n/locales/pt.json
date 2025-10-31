@@ -1,18 +1,33 @@
 {
   "nav": {
     "home": "Início",
-    "services": "Serviços",
+    "services": "Cursos",
     "about": "Sobre",
     "gallery": "Galeria",
     "blog": "Blog",
     "contact": "Contacto",
-    "enroll": "Inscrever-se"
+    "enroll": "Inscrever-se",
+    "search": "Pesquisar..."
   },
   "hero": {
-    "title": "Sonhamos com uma Educação Melhor",
-    "subtitle": "Aprendizagem livre, segura e com propósito",
-    "cta1": "Conheça nossos Programas",
-    "cta2": "Fale Connosco"
+    "title": "Juntos Vamos Explorar Coisas Novas",
+    "subtitle": "Acreditamos que todos devem ter a oportunidade de criar progresso através da educação.",
+    "cta1": "Encontrar Cursos",
+    "cta2": "Contacte-nos"
+  },
+  "features": {
+    "graduation": {
+      "title": "Graduação",
+      "description": "Dream Yetu foi estabelecida e é reconhecida."
+    },
+    "life": {
+      "title": "Vida Universitária",
+      "description": "Dream Yetu foi estabelecida e é reconhecida."
+    },
+    "services": {
+      "title": "Serviços Educacionais",
+      "description": "Dream Yetu foi estabelecida e é reconhecida."
+    }
   },
   "services": {
     "title": "Nossos Serviços",
@@ -49,12 +64,26 @@
   "about": {
     "title": "Sobre Nós",
     "subtitle": "Conheça a história e missão da Dream Yetu",
+    "badge": "Sobre Dream Yetu",
+    "description": "A universidade não só pode oferecer um ambiente rico em experiências sociais e culturais.",
+    "feature1": "Acesso a todos os nossos cursos",
+    "feature2": "Aprenda as competências mais recentes",
+    "feature3": "Capacite a sua organização",
     "mission": "Missão",
     "missionText": "Promover uma educação de qualidade, inclusiva e inovadora, respeitando o ritmo e as necessidades de cada criança.",
     "vision": "Visão",
     "visionText": "Ser referência em educação inovadora e desenvolvimento infantil em Angola e na África Austral.",
     "values": "Valores",
     "valuesText": "Amor, respeito, inovação, inclusão e excelência educativa."
+  },
+  "stats": {
+    "experience": "Anos de Experiência em Educação",
+    "courses": "Cursos Online Inovadores",
+    "teachers": "Professores Qualificados e especialistas",
+    "enrolled": "Alunos Inscritos nos Cursos"
+  },
+  "common": {
+    "readMore": "Ler Mais"
   },
   "contact": {
     "title": "Entre em Contacto",

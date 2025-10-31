@@ -1,18 +1,33 @@
 {
   "nav": {
     "home": "Home",
-    "services": "Services",
+    "services": "Courses",
     "about": "About",
     "gallery": "Gallery",
     "blog": "Blog",
     "contact": "Contact",
-    "enroll": "Enroll Now"
+    "enroll": "Enroll Now",
+    "search": "Search..."
   },
   "hero": {
-    "title": "We Dream of Better Education",
-    "subtitle": "Free, safe and purposeful learning",
-    "cta1": "Explore Our Programs",
+    "title": "Together We'll Explore New Things",
+    "subtitle": "We believe everyone should have the opportunity to create progress through technology.",
+    "cta1": "Find Courses",
     "cta2": "Contact Us"
+  },
+  "features": {
+    "graduation": {
+      "title": "Graduation",
+      "description": "Dream Yetu was established it is recognized."
+    },
+    "life": {
+      "title": "University Life",
+      "description": "Dream Yetu was established it is recognized."
+    },
+    "services": {
+      "title": "Education Services",
+      "description": "Dream Yetu was established it is recognized."
+    }
   },
   "services": {
     "title": "Our Services",
@@ -49,12 +64,26 @@
   "about": {
     "title": "About Us",
     "subtitle": "Learn about Dream Yetu's story and mission",
+    "badge": "About Dream Yetu",
+    "description": "Not only can university offer an environment rich in our social and cultural experiences.",
+    "feature1": "Access to all our courses",
+    "feature2": "Learn the latest skills",
+    "feature3": "Upskill your organization",
     "mission": "Mission",
     "missionText": "To promote quality, inclusive and innovative education, respecting the pace and needs of each child.",
     "vision": "Vision",
     "visionText": "To be a reference in innovative education and child development in Angola and Southern Africa.",
     "values": "Values",
     "valuesText": "Love, respect, innovation, inclusion and educational excellence."
+  },
+  "stats": {
+    "experience": "Years of Education Experience",
+    "courses": "Innovative Online Courses",
+    "teachers": "Qualified Teachers and experts",
+    "enrolled": "Learners Enrolled in Courses"
+  },
+  "common": {
+    "readMore": "Read More"
   },
   "contact": {
     "title": "Get in Touch",
