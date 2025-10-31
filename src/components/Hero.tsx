@@ -47,11 +47,11 @@ const Hero = () => {
           <p className="text-xl md:text-2xl text-white/95 mb-8 max-w-2xl mx-auto">
             {t('hero.subtitle')}
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-2">
             <Link to="/services">
               <Button
                 size="lg"
-                className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-6 h-auto shadow-lg hover-lift"
+                className="bg-white text-primary hover:bg-white/95 text-lg px-10 py-7 h-auto shadow-large hover:shadow-xl hover:-translate-y-1 transition-all duration-300 rounded-2xl font-semibold"
               >
                 {t('hero.cta1')}
               </Button>
@@ -60,7 +60,7 @@ const Hero = () => {
               <Button
                 size="lg"
                 variant="outline"
-                className="bg-white/10 border-2 border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-6 h-auto backdrop-blur-sm shadow-lg hover-lift"
+                className="bg-white/10 border-2 border-white text-white hover:bg-white hover:text-primary text-lg px-10 py-7 h-auto backdrop-blur-md shadow-large hover:shadow-xl hover:-translate-y-1 transition-all duration-300 rounded-2xl font-semibold"
               >
                 {t('hero.cta2')}
               </Button>

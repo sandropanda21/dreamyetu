@@ -27,15 +27,15 @@ const Navbar = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border shadow-sm">
-      <div className="container mx-auto px-4 py-4">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/98 backdrop-blur-md border-b border-border/50 shadow-soft">
+      <div className="container mx-auto px-4 py-5">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 rounded-full gradient-hero flex items-center justify-center">
-              <span className="text-white font-bold text-xl">HS</span>
+          <Link to="/" className="flex items-center gap-3 group">
+            <div className="w-11 h-11 rounded-full gradient-hero flex items-center justify-center shadow-soft group-hover:shadow-primary transition-all duration-300 group-hover:scale-105">
+              <span className="text-white font-bold text-lg">DY</span>
             </div>
-            <span className="text-xl font-bold text-foreground">HomeSchooling</span>
+            <span className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">Dream Yetu</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -44,8 +44,10 @@ const Navbar = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`text-sm font-medium transition-colors hover:text-primary ${
-                  isActive(link.path) ? 'text-primary' : 'text-foreground'
+                className={`text-sm font-medium transition-all duration-300 hover:text-primary relative pb-1 ${
+                  isActive(link.path) 
+                    ? 'text-primary after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-primary after:rounded-full' 
+                    : 'text-foreground'
                 }`}
               >
                 {link.label}
@@ -67,7 +69,7 @@ const Navbar = () => {
 
             <Button
               size="sm"
-              className="hidden md:inline-flex bg-primary hover:bg-primary-dark text-primary-foreground"
+              className="hidden md:inline-flex"
             >
               {t('nav.enroll')}
             </Button>

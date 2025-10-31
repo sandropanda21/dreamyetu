@@ -11,24 +11,24 @@ interface TestimonialCardProps {
 
 const TestimonialCard = ({ name, role, content, rating }: TestimonialCardProps) => {
   return (
-    <Card className="p-6 h-full hover-lift">
-      <div className="flex items-center mb-4">
+    <Card className="p-8 h-full hover-lift bg-gradient-subtle border-border/30">
+      <div className="flex items-center gap-1 mb-6">
         {[...Array(5)].map((_, i) => (
           <Star
             key={i}
-            className={`w-5 h-5 ${
-              i < rating ? 'text-accent fill-accent' : 'text-muted'
+            className={`w-5 h-5 transition-colors ${
+              i < rating ? 'text-accent fill-accent' : 'text-muted/40'
             }`}
           />
         ))}
       </div>
-      <p className="text-muted-foreground mb-6 italic leading-relaxed">"{content}"</p>
-      <div className="flex items-center space-x-3">
-        <div className="w-12 h-12 rounded-full bg-gradient-hero flex items-center justify-center text-white font-bold">
+      <p className="text-foreground/80 mb-8 italic leading-relaxed text-[15px]">"{content}"</p>
+      <div className="flex items-center gap-4">
+        <div className="w-14 h-14 rounded-full bg-gradient-hero flex items-center justify-center text-white font-bold text-lg shadow-soft">
           {name.charAt(0)}
         </div>
         <div>
-          <h4 className="font-semibold">{name}</h4>
+          <h4 className="font-semibold text-foreground text-base">{name}</h4>
           <p className="text-sm text-muted-foreground">{role}</p>
         </div>
       </div>
