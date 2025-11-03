@@ -69,29 +69,17 @@ const AboutSection = () => {
               {t('about.badge') || 'About Dream Yetu'}
             </span>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-              {t('about.title') || 'Degrees in Various academic Disciplines'}
+                <span className="text-primary mr-1">DREAM</span>  
+                <span className="text-secondary">YETU</span>
             </h2>
             <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
               {t('about.description') || 
                 'Not only can university offer an environment rich in our social an cultural experiences.'
               }
             </p>
-
-            {/* Feature List */}
-            <ul className="space-y-4 mb-8">
-              {features.map((feature, index) => (
-                <li key={index} className="flex items-center gap-3">
-                  <div className="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Check className="w-4 h-4 text-primary" />
-                  </div>
-                  <span className="text-foreground font-medium">{feature}</span>
-                </li>
-              ))}
-            </ul>
-
             <Link to="/about">
               <Button 
-                size="lg"
+                size="sm"
                 className="bg-primary hover:bg-primary-dark text-white px-8 py-6 h-auto rounded-lg font-semibold"
               >
                 {t('common.readMore') || 'Read More'}

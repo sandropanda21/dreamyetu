@@ -62,10 +62,9 @@
     "rights": "© 2025 Dream Yetu. Todos os direitos reservados."
   },
   "about": {
-    "title": "Sobre Nós",
-    "subtitle": "Conheça a história e missão da Dream Yetu",
-    "badge": "Sobre Dream Yetu",
-    "description": "A universidade não só pode oferecer um ambiente rico em experiências sociais e culturais.",
+    "subtitle": "Conheça melhor a Dream Yetu",
+    "badge": "Sobre a Dream Yetu",
+    "description": "A Dream Yetu é pioneira em Angola na implementação do Homeschooling Certificado, um modelo de ensino inovador e reconhecido internacionalmente, que permite que a criança aprenda no conforto e segurança da sua casa, com o mesmo rigor e qualidade de uma escola convencional.",
     "feature1": "Acesso a todos os nossos cursos",
     "feature2": "Aprenda as competências mais recentes",
     "feature3": "Capacite a sua organização",
@@ -74,7 +73,15 @@
     "vision": "Visão",
     "visionText": "Ser referência em educação inovadora e desenvolvimento infantil em Angola e na África Austral.",
     "values": "Valores",
-    "valuesText": "Amor, respeito, inovação, inclusão e excelência educativa."
+    "valuesText": "Amor, respeito, inovação, inclusão e excelência educativa.",
+    "historyHeader": "A Nossa História",
+    "historyParagraph1": "A Dream Yetu nasceu do sonho de transformar a educação em Angola criando um espaço onde cada criança pode aprender ao seu próprio ritmo, com amor, respeitoe dedicação.",
+    "historyParagraph2": " Desde o início, comprometemo-nos a oferecer programas educativos inovadores que respeitam a individualidade de cada aluno, promovendo não apenas o desenvolvimento académico, mas também o crescimento emocional e social.",
+    "historyParagraph3": "Acreditamos que a educação começa com amor, curiosidade e  respeito pelo ritmo de cada criança.",
+    "teamSectionTitle": "Nossa Equipa",
+    "teamSectionSubtitle": "Profissionais dedicados e apaixonados por educação",
+    "teamIdentification": "Membro da Equipa",
+    "teamRole": "Educador(a)"
   },
   "stats": {
     "experience": "Anos de Experiência em Educação",

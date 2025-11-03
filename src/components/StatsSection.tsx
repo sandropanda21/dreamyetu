@@ -13,12 +13,6 @@ const StatsSection = () => {
       label: t('stats.experience') || 'Years of Language Education Experience',
     },
     {
-      icon: BookOpen,
-      number: '99',
-      suffix: '+',
-      label: t('stats.courses') || 'Innovative Foreign Online Courses',
-    },
-    {
       icon: Users,
       number: '10',
       suffix: '+',
@@ -35,7 +29,7 @@ const StatsSection = () => {
   return (
     <section className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {stats.map((stat, index) => {
             const Icon = stat.icon;
             return (
@@ -45,7 +39,7 @@ const StatsSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="text-center"
+                className="text-center border-[.25rem] border-dashed border-hero border-accent rounded-sm p-4"
               >
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-white rounded-full shadow-soft mb-4">
                   <Icon className="w-8 h-8 text-primary" />

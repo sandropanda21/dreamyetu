@@ -23,13 +23,13 @@ const Hero = () => {
       {/* Navigation Arrows */}
       <button 
         onClick={() => setCurrentSlide(Math.max(0, currentSlide - 1))}
-        className="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 bg-black/30 hover:bg-black/50 text-white rounded-full flex items-center justify-center transition-colors"
+        className="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 bg-black/20 hover:bg-primary text-white rounded-full flex items-center justify-center transition-colors"
       >
         ←
       </button>
       <button 
         onClick={() => setCurrentSlide(currentSlide + 1)}
-        className="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 bg-black/30 hover:bg-black/50 text-white rounded-full flex items-center justify-center transition-colors"
+        className="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 bg-black/20 hover:bg-secondary text-white rounded-full flex items-center justify-center transition-colors"
       >
         →
       </button>
@@ -42,8 +42,9 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="max-w-2xl"
         >
-          <p className="text-white/90 text-sm font-medium mb-4 uppercase tracking-wider">
-            DREAM YETU EDUCATION
+          <p className="text-2xl font-medium mb-4 uppercase tracking-wider">
+            <span className="text-primary mr-1">DREAM</span>  
+            <span className="text-secondary">YETU</span>
           </p>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
             {t('hero.title')}

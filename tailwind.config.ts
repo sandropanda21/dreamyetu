@@ -43,6 +43,8 @@ export default {
           foreground: "hsl(var(--accent-foreground))",
           light: "hsl(var(--accent-light))",
         },
+        "process-cyan": "hsla(194, 98%, 48%, 1)",
+        "carrot-orange": "hsla(33, 94%, 54%, 1)",
         popover: {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",

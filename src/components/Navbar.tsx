@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Menu, X, Globe } from 'lucide-react';
+import { Menu, MapPin, Mail, X, Globe, Search  } from 'lucide-react';
+import Logo from "@/assets/logo.jpeg"
 import { Button } from '@/components/ui/button';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -20,7 +21,6 @@ const Navbar = () => {
     { path: '/about', label: t('nav.about') },
     { path: '/services', label: t('nav.services') },
     { path: '/gallery', label: t('nav.gallery') },
-    { path: '/blog', label: t('nav.blog') },
     { path: '/contact', label: t('nav.contact') },
   ];
 
@@ -28,20 +28,21 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
-      {/* Top Bar */}
-      <div className="bg-muted/40 border-b border-border/30">
+      <div className="bg-secondary border-b border-border/30">
         <div className="container mx-auto px-4 py-2">
           <div className="flex items-center justify-between text-sm">
-            <div className="flex items-center gap-6 text-muted-foreground">
-              <span>📧 info@dreamyetu.com</span>
-              <span>📍 Luanda, Angola</span>
+            <div className="flex items-center gap-2 text-white">
+              <Mail></Mail>
+              <span>info@dreamyetu.com</span>
+              <MapPin></MapPin>
+              <span>Luanda, Angola</span>
             </div>
             <div className="flex items-center gap-3">
               <Button
                 variant="ghost"
                 size="sm"
                 onClick={toggleLanguage}
-                className="text-muted-foreground hover:text-foreground h-8"
+                className="text-white hover:text-foreground h-8"
               >
                 <Globe className="w-3 h-3 mr-1" />
                 {i18n.language.toUpperCase()}
@@ -55,19 +56,17 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-
-      {/* Main Navbar */}
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
-            <div className="w-11 h-11 rounded-lg gradient-hero flex items-center justify-center shadow-soft group-hover:shadow-primary transition-all duration-300">
-              <span className="text-white font-bold text-xl">DY</span>
+            <div className="w-11 h-11 rounded-lg">
+              <img src={Logo} alt="Dream Yetu logo" className="rounded-full"/>
             </div>
-            <span className="text-2xl font-bold text-foreground">Dream Yetu</span>
+            <span className="text-2xl font-bold">
+              <span className="text-primary mr-1">Dream</span>
+              <span className="text-secondary">Yetu</span>
+            </span>
           </Link>
-
-          {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
             {navLinks.map((link) => (
               <Link
@@ -81,17 +80,16 @@ const Navbar = () => {
               </Link>
             ))}
           </div>
-
           {/* Search Bar */}
           <div className="hidden lg:flex items-center gap-4">
             <div className="relative">
               <input
-                type="text"
+                type="search"
                 placeholder={t('nav.search') || 'Search...'}
                 className="w-64 pl-4 pr-10 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/20"
               />
-              <button className="absolute right-2 top-1/2 -translate-y-1/2 p-1.5 bg-primary text-white rounded">
-                <Menu className="w-4 h-4" />
+              <button className="absolute right-2 top-1/2 -translate-y-1/2 p-1.5 text-ring-primary/20">
+                <Search className="w-4 h-4" />
               </button>
             </div>
           </div>

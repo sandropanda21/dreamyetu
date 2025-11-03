@@ -10,11 +10,13 @@ i18n
       pt: { translation: pt },
       en: { translation: en },
     },
-    lng: 'pt', // Default language
+    lng: 'pt',
     fallbackLng: 'pt',
     interpolation: {
       escapeValue: false,
     },
+    react: { useSuspense: false }, // evita piscadas de texto
+    preload: ['pt', 'en'],
   });
 
 export default i18n;

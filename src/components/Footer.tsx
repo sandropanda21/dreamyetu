@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import Logo from '@/assets/logo.jpeg'
 import { Facebook, Instagram, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer = () => {
@@ -16,23 +17,22 @@ const Footer = () => {
     { path: '/services', label: t('nav.services') },
     { path: '/about', label: t('nav.about') },
     { path: '/gallery', label: t('nav.gallery') },
-    { path: '/blog', label: t('nav.blog') },
     { path: '/contact', label: t('nav.contact') },
   ];
 
   return (
-    <footer className="bg-card border-t border-border">
+    <footer className="bg-secondary border-t border-border">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About Section */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <div className="w-10 h-10 rounded-full gradient-hero flex items-center justify-center">
-                <span className="text-white font-bold text-xl">DY</span>
+                <img src={Logo} alt="Dream Yetu logo" className="rounded-full"/>
               </div>
-              <span className="text-xl font-bold">Dream Yetu</span>
+              <span className="text-process-cyan text-xl font-bold">Dream Yetu</span>
             </div>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-white">
               {t('footer.aboutText')}
             </p>
             <div className="flex space-x-3">
@@ -48,16 +48,14 @@ const Footer = () => {
               ))}
             </div>
           </div>
-
-          {/* Quick Links */}
           <div>
-            <h3 className="font-bold text-lg mb-4">{t('footer.quickLinks')}</h3>
+            <h3 className=" text-process-cyan text-lg mb-4">{t('footer.quickLinks')}</h3>
             <ul className="space-y-2">
               {quickLinks.map((link) => (
                 <li key={link.path}>
                   <Link
                     to={link.path}
-                    className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                    className="text-sm text-white hover:text-primary transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -68,18 +66,18 @@ const Footer = () => {
 
           {/* Contact Luanda */}
           <div>
-            <h3 className="font-bold text-lg mb-4">{t('contact.info.luanda')}</h3>
+            <h3 className="text-process-cyan mb-4">{t('contact.info.luanda')}</h3>
             <ul className="space-y-3">
-              <li className="flex items-start space-x-2 text-sm text-muted-foreground">
-                <MapPin className="w-4 h-4 mt-0.5 text-primary flex-shrink-0" />
+              <li className="flex items-start space-x-2 text-sm text-white">
+                <MapPin className="w-4 h-4 mt-0.5 text-white flex-shrink-0" />
                 <span>Luanda, Angola</span>
               </li>
-              <li className="flex items-center space-x-2 text-sm text-muted-foreground">
-                <Phone className="w-4 h-4 text-primary flex-shrink-0" />
+              <li className="flex items-center space-x-2 text-sm text-white">
+                <Phone className="w-4 h-4 text-white flex-shrink-0" />
                 <span>+244 xxx xxx xxx</span>
               </li>
-              <li className="flex items-center space-x-2 text-sm text-muted-foreground">
-                <Mail className="w-4 h-4 text-primary flex-shrink-0" />
+              <li className="flex items-center space-x-2 text-sm text-white">
+                <Mail className="w-4 h-4 text-white flex-shrink-0" />
                 <span>info@dreamyetu.com</span>
               </li>
             </ul>
@@ -87,25 +85,25 @@ const Footer = () => {
 
           {/* Contact Cape Town */}
           <div>
-            <h3 className="font-bold text-lg mb-4">{t('contact.info.capetown')}</h3>
+            <h3 className="text-process-cyan mb-4">{t('contact.info.capetown')}</h3>
             <ul className="space-y-3">
-              <li className="flex items-start space-x-2 text-sm text-muted-foreground">
-                <MapPin className="w-4 h-4 mt-0.5 text-primary flex-shrink-0" />
+              <li className="flex items-start space-x-2 text-sm text-white">
+                <MapPin className="w-4 h-4 mt-0.5 text-white flex-shrink-0" />
                 <span>Cape Town, South Africa</span>
               </li>
-              <li className="flex items-center space-x-2 text-sm text-muted-foreground">
-                <Phone className="w-4 h-4 text-primary flex-shrink-0" />
+              <li className="flex items-center space-x-2 text-sm text-white">
+                <Phone className="w-4 h-4 text-white flex-shrink-0" />
                 <span>+27 76 113 8020</span>
               </li>
-              <li className="flex items-center space-x-2 text-sm text-muted-foreground">
-                <Mail className="w-4 h-4 text-primary flex-shrink-0" />
+              <li className="flex items-center space-x-2 text-sm text-white">
+                <Mail className="w-4 h-4 text-white flex-shrink-0" />
                 <span>capetown@dreamyetu.com</span>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-border mt-8 pt-8 text-center text-sm text-muted-foreground">
+        <div className="border-t border-border mt-8 pt-8 text-center text-sm text-white">
           <p>{t('footer.rights')}</p>
         </div>
       </div>
