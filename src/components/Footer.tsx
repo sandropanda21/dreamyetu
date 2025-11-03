@@ -30,7 +30,7 @@ const Footer = () => {
               <div className="w-10 h-10 rounded-full gradient-hero flex items-center justify-center">
                 <img src={Logo} alt="Dream Yetu logo" className="rounded-full"/>
               </div>
-              <span className="text-process-cyan text-xl font-bold">Dream Yetu</span>
+              <span className="text-white text-xl font-bold">Homeschooling</span>
             </div>
             <p className="text-sm text-white">
               {t('footer.aboutText')}
@@ -49,7 +49,7 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <h3 className=" text-process-cyan text-lg mb-4">{t('footer.quickLinks')}</h3>
+            <h3 className=" text-white text-lg mb-4">{t('footer.quickLinks')}</h3>
             <ul className="space-y-2">
               {quickLinks.map((link) => (
                 <li key={link.path}>
@@ -66,7 +66,7 @@ const Footer = () => {
 
           {/* Contact Luanda */}
           <div>
-            <h3 className="text-process-cyan mb-4">{t('contact.info.luanda')}</h3>
+            <h3 className="text-white mb-4">{t('contact.info.luanda')}</h3>
             <ul className="space-y-3">
               <li className="flex items-start space-x-2 text-sm text-white">
                 <MapPin className="w-4 h-4 mt-0.5 text-white flex-shrink-0" />
@@ -85,7 +85,7 @@ const Footer = () => {
 
           {/* Contact Cape Town */}
           <div>
-            <h3 className="text-process-cyan mb-4">{t('contact.info.capetown')}</h3>
+            <h3 className="text-white mb-4">{t('contact.info.capetown')}</h3>
             <ul className="space-y-3">
               <li className="flex items-start space-x-2 text-sm text-white">
                 <MapPin className="w-4 h-4 mt-0.5 text-white flex-shrink-0" />

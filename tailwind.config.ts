@@ -54,6 +54,13 @@ export default {
           foreground: "hsl(var(--card-foreground))",
         },
       },
+       backgroundImage: {
+        'kids': "url('@/assets/infantil1.jpeg')",
+        'kidsSmile': "url('@/assets/hero-education.jpg')",
+        'capeTown': "url('@/assets/capetown.jpg')",
+        'classroom': "url('@/assets/classroom.jpg')"
+      },
+
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 0.25rem)",

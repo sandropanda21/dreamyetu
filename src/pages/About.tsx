@@ -26,7 +26,7 @@ const About = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="pt-32 pb-20 gradient-hero">
+      <section className="pt-32 pb-20 bg-kids bg-[position:center_32.5%] bg-cover bg-no-repeat">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
             <span className="text-primary mr-2">DREAM</span>  

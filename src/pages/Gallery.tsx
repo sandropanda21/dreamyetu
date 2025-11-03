@@ -6,7 +6,6 @@ import classroomImg from '@/assets/classroom.jpg';
 import capetownImg from '@/assets/capetown.jpg';
 import inclusionImg from '@/assets/infantil1.jpeg';
 import heroImg from '@/assets/infantil1.jpeg';
-
 const Gallery = () => {
   const { t } = useTranslation();
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -35,7 +34,7 @@ const Gallery = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="pt-32 pb-20 gradient-hero">
+      <section className="pt-32 pb-20 bg-capeTown bg-center bg-cover bg-no-repeat">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
             {t('gallery.title')}
