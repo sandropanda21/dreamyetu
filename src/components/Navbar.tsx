@@ -33,9 +33,9 @@ const Navbar = () => {
           <div className="flex items-center justify-between text-sm">
             <div className="flex items-center gap-2 text-white">
               <Mail></Mail>
-              <span>info@dreamyetu.com</span>
+              <span className="text-[.875rem] sm:text-[.75rem]">info@dreamyetu.com</span>
               <MapPin></MapPin>
-              <span>Luanda, Angola</span>
+              <span className="text-[.875rem] sm:text-[.75rem]">Luanda, Angola</span>
             </div>
             <div className="flex items-center gap-3">
               <Button
@@ -63,8 +63,8 @@ const Navbar = () => {
               <img src={Logo} alt="Dream Yetu logo" className="rounded-full"/>
             </div>
             <span className="text-2xl font-bold">
-              <span className="text-primary mr-1">Dream</span>
-              <span className="text-secondary">Yetu</span>
+              <span className="text-primary">Home</span>
+              <span className="text-secondary">schooling</span>
             </span>
           </Link>
           <div className="hidden lg:flex items-center space-x-8">

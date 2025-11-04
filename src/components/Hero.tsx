@@ -43,8 +43,8 @@ const Hero = () => {
           className="max-w-2xl"
         >
           <p className="text-2xl font-medium mb-4 uppercase tracking-wider">
-            <span className="text-primary mr-1">DREAM</span>  
-            <span className="text-secondary">YETU</span>
+            <span className="text-primary">Home</span>  
+            <span className="text-secondary">schooling</span>
           </p>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
             {t('hero.title')}
