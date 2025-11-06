@@ -17,10 +17,9 @@ const AboutSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-5 sm:py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          {/* Image Collage */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -32,7 +31,7 @@ const AboutSection = () => {
             <div className="absolute -left-8 top-1/2 -translate-y-1/2 w-64 h-64 border-4 border-primary/20 rounded-full -z-10" />
             
             {/* Images Grid */}
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-3 sm:gap-4">
               <div className="space-y-4">
                 <img
                   src={infantil1}
@@ -57,30 +56,27 @@ const AboutSection = () => {
             {/* Decorative Circle Element */}
             <div className="absolute -right-8 -bottom-8 w-32 h-32 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full blur-3xl -z-10" />
           </motion.div>
-
-          {/* Content */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <span className="inline-block px-4 py-1.5 bg-primary/10 text-primary font-semibold text-sm rounded-full mb-4">
+            <span className="inline-block px-2 sm:px-4 py-[.1875rem] sm:py-1.5 bg-primary/10 text-primary font-semibold text-xs sm:text-sm rounded-full mb-3 sm:mb-4">
               {t('about.badge') || 'About Dream Yetu'}
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-6 leading-tight">
                 <span className="text-primary mr-1">DREAM</span>  
                 <span className="text-secondary">YETU</span>
             </h2>
-            <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
+            <p className="text-muted-foreground text-justify text-sm sm:text-lg mb-4 sm:mb-8 leading-relaxed">
               {t('about.description') || 
                 'Not only can university offer an environment rich in our social an cultural experiences.'
               }
             </p>
             <Link to="/about">
               <Button 
-                size="sm"
-                className="bg-primary hover:bg-primary-dark text-white px-8 py-6 h-auto rounded-lg font-semibold"
+                className="bg-primary hover:bg-primary-dark text-white px-4 sm:px-8 py-6 rounded-lg font-semibold h-9"
               >
                 {t('common.readMore') || 'Read More'}
               </Button>

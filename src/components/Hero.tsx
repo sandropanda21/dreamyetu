@@ -10,7 +10,7 @@ const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   return (
-    <div className="relative h-[600px] lg:h-[700px] overflow-hidden">
+    <div className="relative h-[450px] sm:h-[600px] lg:h-[700px] overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
         <div
@@ -23,13 +23,13 @@ const Hero = () => {
       {/* Navigation Arrows */}
       <button 
         onClick={() => setCurrentSlide(Math.max(0, currentSlide - 1))}
-        className="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 bg-black/20 hover:bg-primary text-white rounded-full flex items-center justify-center transition-colors"
+        className="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-10 sm:w-12 h-10 sm:h-12 bg-black/20 hover:bg-primary text-white rounded-full flex items-center justify-center transition-colors"
       >
         ←
       </button>
       <button 
         onClick={() => setCurrentSlide(currentSlide + 1)}
-        className="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 bg-black/20 hover:bg-secondary text-white rounded-full flex items-center justify-center transition-colors"
+        className="absolute right-4 top-1/2 -translate-y-1/2 z-20  w-10 sm:w-12 h-10 sm:h-12 bg-black/20 hover:bg-secondary text-white rounded-full flex items-center justify-center transition-colors"
       >
         →
       </button>
@@ -42,20 +42,20 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="max-w-2xl"
         >
-          <p className="text-2xl font-medium mb-4 uppercase tracking-wider">
+          <p className="text-base sm:text-2xl font-medium mb-2 sm:mb-4 uppercase tracking-wider">
             <span className="text-primary mr-1">Dream</span>  
             <span className="text-secondary">Yetu</span>
           </p>
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+          <h1 className="text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white  mb-3 sm:mb-6 leading-tight">
             {t('hero.title')}
           </h1>
-          <p className="text-lg md:text-xl text-white/90 mb-8 max-w-xl">
+          <p className="text-base sm:text-lg md:text-xl text-white/90 mb-4 sm:mb-8 max-w-xl">
             {t('hero.subtitle')}
           </p>
           <Link to="/services">
             <Button
               size="lg"
-              className="bg-primary hover:bg-primary-dark text-white px-8 py-6 h-auto text-base font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+              className="bg-primary hover:bg-primary-dark text-white px-4 sm:px-8 py-3 sm:py-6 h-auto sm:h-12 text-sm sm:text-base font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300  sm:rounded-xl"
             >
               {t('hero.cta1')}
             </Button>
