@@ -26,7 +26,8 @@ const About = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-kids bg-[position:center_32.5%] bg-cover bg-no-repeat">
+      <section className="relative pt-32 pb-20 bg-kids bg-[position:center_32.5%] bg-cover bg-no-repeat">
+        <div className="absolute inset-0 bg-black/25"></div>
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
             <span className="text-primary mr-2">DREAM</span>  
@@ -77,34 +78,6 @@ const About = () => {
                 </p>
               </div>
             </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Team Section */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl text-primary md:text-5xl font-bold mb-4">{t('about.teamSectionTitle')}</h2>
-            <p className="text-xl text-secondary max-w-2xl mx-auto">
-              {t('about.teamSectionSubtitle')}
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[1, 2, 3, 4].map((member) => (
-              <Card key={member} className="p-6 text-center border-[.25rem] border-dashed border-accent hover-lift">
-                <div className="w-24 h-24 rounded-full bg-gradient-hero mx-auto mb-4 flex items-center justify-center text-white text-3xl font-bold">
-                  DY
-                </div>
-                <h3 className="text-xl text-secondary font-bold mb-1">{
-                t('about.teamIdentification')}
-                </h3>
-                <p className="text-primary text-sm">
-                  {t('about.teamRole')}
-                </p>
-              </Card>
-            ))}
           </div>
         </div>
       </section>

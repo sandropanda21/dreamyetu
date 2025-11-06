@@ -30,7 +30,7 @@ const Footer = () => {
               <div className="w-10 h-10 rounded-full gradient-hero flex items-center justify-center">
                 <img src={Logo} alt="Dream Yetu logo" className="rounded-full"/>
               </div>
-              <span className="text-white text-xl font-bold">Homeschooling</span>
+              <span className="text-white text-xl font-bold">Dream Yetu</span>
             </div>
             <p className="text-sm text-white">
               {t('footer.aboutText')}

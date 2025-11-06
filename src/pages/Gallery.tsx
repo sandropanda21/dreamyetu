@@ -34,7 +34,8 @@ const Gallery = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-capeTown bg-center bg-cover bg-no-repeat">
+      <section className="relative pt-32 pb-20 bg-capeTown bg-center bg-cover bg-no-repeat">
+        <div className="absolute inset-0 bg-black/30"></div>
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
             {t('gallery.title')}
@@ -46,7 +47,7 @@ const Gallery = () => {
       </section>
 
       {/* Filters */}
-      <section className="py-8 bg-muted/30 sticky top-20 z-40 backdrop-blur-sm">
+      <section className="py-8 bg-muted/30 top-20 z-40 backdrop-blur-sm">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap justify-center gap-3">
             {filters.map((f) => (

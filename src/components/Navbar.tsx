@@ -63,8 +63,8 @@ const Navbar = () => {
               <img src={Logo} alt="Dream Yetu logo" className="rounded-full"/>
             </div>
             <span className="text-2xl font-bold">
-              <span className="text-primary">Home</span>
-              <span className="text-secondary">schooling</span>
+              <span className="text-primary mr-1">Dream</span>
+              <span className="text-secondary">Yetu</span>
             </span>
           </Link>
           <div className="hidden lg:flex items-center space-x-8">

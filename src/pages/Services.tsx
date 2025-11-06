@@ -74,9 +74,9 @@ const Services = () => {
 
   return (
     <>
-      {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-classroom bg-[position:center_72%] bg-[length:100%] bg-no-repeat">
-        <div className="container mx-auto px-4 text-center">
+      <section className="relative pt-32 pb-20 bg-classroom bg-[position:center_72%] bg-[length:100%] bg-no-repeat">
+        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="relative container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
             {t('services.title')}
           </h1>
