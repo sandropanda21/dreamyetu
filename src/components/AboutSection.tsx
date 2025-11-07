@@ -17,9 +17,9 @@ const AboutSection = () => {
   ];
 
   return (
-    <section className="py-5 sm:py-20 bg-white">
+    <section className="py-10 sm:py-20 bg-white">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -27,10 +27,7 @@ const AboutSection = () => {
             viewport={{ once: true }}
             className="relative"
           >
-            {/* Decorative Circle */}
             <div className="absolute -left-8 top-1/2 -translate-y-1/2 w-64 h-64 border-4 border-primary/20 rounded-full -z-10" />
-            
-            {/* Images Grid */}
             <div className="grid grid-cols-2 gap-3 sm:gap-4">
               <div className="space-y-4">
                 <img
@@ -52,8 +49,6 @@ const AboutSection = () => {
                 />
               </div>
             </div>
-
-            {/* Decorative Circle Element */}
             <div className="absolute -right-8 -bottom-8 w-32 h-32 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full blur-3xl -z-10" />
           </motion.div>
           <motion.div

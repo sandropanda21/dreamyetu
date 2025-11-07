@@ -35,12 +35,12 @@ const Gallery = () => {
     <>
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 bg-capeTown bg-center bg-cover bg-no-repeat">
-        <div className="absolute inset-0 bg-black/30"></div>
+        <div className="absolute inset-0 bg-black/20"></div>
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
             {t('gallery.title')}
           </h1>
-          <p className="text-xl text-white/90 max-w-3xl mx-auto animate-fade-in">
+          <p className="text-lg sm:text-xl text-white/90 max-w-3xl mx-auto animate-fade-in">
             {t('gallery.subtitle')}
           </p>
         </div>

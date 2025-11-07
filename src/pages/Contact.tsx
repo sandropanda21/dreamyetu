@@ -61,7 +61,7 @@ const Contact = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
             <Card className="p-8 animate-fade-in">
-              <h2 className="text-3xl font-bold mb-6">Envie-nos uma mensagem</h2>
+              <h2 className="text-3xl font-bold mb-6">{t('contact.form.formTitle')}</h2>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="space-y-2">
                   <Label htmlFor="name">{t('contact.form.name')}</Label>
@@ -99,14 +99,14 @@ const Contact = () => {
                   <Label htmlFor="service">{t('contact.form.service')}</Label>
                   <Select>
                     <SelectTrigger className="h-12">
-                      <SelectValue placeholder="Selecione um serviço" />
+                      <SelectValue placeholder={t('contact.form.servicePlaceholder')} />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="preschool">Educação Pré-Escolar</SelectItem>
-                      <SelectItem value="homeschooling">Homeschooling</SelectItem>
-                      <SelectItem value="inclusion">Educação Inclusiva</SelectItem>
-                      <SelectItem value="residence">Residência Cape Town</SelectItem>
-                      <SelectItem value="other">Outro</SelectItem>
+                      <SelectItem value="preschool">{t('contact.form.serviceOptions.preschool')}</SelectItem>
+                      <SelectItem value="homeschooling">{t('contact.form.serviceOptions.homeschooling')}</SelectItem>
+                      <SelectItem value="inclusion">{t('contact.form.serviceOptions.inclusion')}</SelectItem>
+                      <SelectItem value="residence">{t('contact.form.serviceOptions.residence')}</SelectItem>
+                      <SelectItem value="other">{t('contact.form.serviceOptions.other')}</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
@@ -115,7 +115,7 @@ const Contact = () => {
                   <Label htmlFor="message">{t('contact.form.message')}</Label>
                   <Textarea
                     id="message"
-                    placeholder="Conte-nos como podemos ajudar..."
+                    placeholder={t('contact.form.placeholderMessage')}
                     required
                     className="min-h-32"
                   />
@@ -157,12 +157,12 @@ const Contact = () => {
 
               {/* Map Placeholder */}
               <Card className="p-8">
-                <h3 className="text-2xl font-bold mb-4">Localizações</h3>
+                <h3 className="text-2xl font-bold mb-4">{t('contact.form.location')}</h3>
                 <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
                   <MapPin className="w-12 h-12 text-muted-foreground" />
                 </div>
                 <p className="text-sm text-muted-foreground mt-4">
-                  Visite-nos em Luanda ou Cape Town
+                  {t('contact.form.visitUs')}
                 </p>
               </Card>
             </div>

@@ -74,20 +74,18 @@ const Services = () => {
 
   return (
     <>
-      <section className="relative pt-32 pb-20 bg-classroom bg-[position:center_72%] bg-[length:100%] bg-no-repeat">
+      <section className="relative pt-20 sm:pt-32 pb-12 sm:pb-20 bg-classroom bg-[position:center_72%] bg-[length:100%] bg-no-repeat">
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="relative container mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
             {t('services.title')}
           </h1>
-          <p className="text-xl text-white/90 max-w-3xl mx-auto animate-fade-in">
+          <p className="text-lg sm:text-xl text-white/90 max-w-3xl mx-auto animate-fade-in">
             {t('services.subtitle')}
           </p>
         </div>
       </section>
-
-      {/* Services Grid */}
-      <section className="py-20 bg-background">
+      <section className="py-12 sm:py-20 px-auto bg-background">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {allServices.map((service, index) => (
@@ -96,18 +94,15 @@ const Services = () => {
           </div>
         </div>
       </section>
-
-      {/* Detailed Service Sections */}
-      <section className="py-20 bg-muted/30">
+      <section className="pb-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto space-y-16">
-            {/* Homeschooling Details */}
             <div className="bg-card p-8 rounded-2xl shadow-lg border-2 border-border animate-fade-in">
               <div className="flex items-center space-x-4 mb-6">
                 <div className="w-16 h-16 rounded-2xl bg-secondary text-secondary-foreground flex items-center justify-center">
-                  <HomeIcon className="w-8 h-8" />
+                  <HomeIcon className="w-6 sm:w-8 h-6 sm:h-8" />
                 </div>
-                <h2 className="text-3xl font-bold">Homeschooling Certificado</h2>
+                <h2 className="text-lg sm:text-3xl font-bold">Homeschooling Certificado</h2>
               </div>
               <div className="space-y-4 text-muted-foreground">
                 <p>
@@ -126,14 +121,12 @@ const Services = () => {
                 </div>
               </div>
             </div>
-
-            {/* Cape Town Residence Details */}
             <div className="bg-card p-8 rounded-2xl shadow-lg border-2 border-border animate-fade-in">
               <div className="flex items-center space-x-4 mb-6">
                 <div className="w-16 h-16 rounded-2xl bg-primary text-primary-foreground flex items-center justify-center">
-                  <Building2 className="w-8 h-8" />
+                  <Building2 className="w-6 sm:w-8 h-6 sm:h-8" />
                 </div>
-                <h2 className="text-3xl font-bold">Residência Estudantil Cape Town</h2>
+                <h2 className="text-lg sm:text-3xl font-bold">Residência Estudantil Cape Town</h2>
               </div>
               <div className="space-y-4 text-muted-foreground">
                 <p>
@@ -142,19 +135,19 @@ const Services = () => {
                 </p>
                 <ul className="space-y-2 mt-4">
                   <li className="flex items-center space-x-2">
-                    <div className="w-2 h-2 rounded-full bg-primary" />
+                    <div className="w-1 sm:w-2 sm:h-2 rounded-full bg-primary" />
                     <span>Ambiente seguro e acolhedor</span>
                   </li>
                   <li className="flex items-center space-x-2">
-                    <div className="w-2 h-2 rounded-full bg-primary" />
+                    <div className="w-1 sm:w-2 sm:h-2 rounded-full bg-primary" />
                     <span>Supervisão 24/7</span>
                   </li>
                   <li className="flex items-center space-x-2">
-                    <div className="w-2 h-2 rounded-full bg-primary" />
+                    <div className="w-1 sm:w-2 sm:h-2 rounded-full bg-primary" />
                     <span>Apoio académico personalizado</span>
                   </li>
                   <li className="flex items-center space-x-2">
-                    <div className="w-2 h-2 rounded-full bg-primary" />
+                    <div className="w-1 sm:w-2 sm:h-2 rounded-full bg-primary" />
                     <span>Acompanhamento psicológico</span>
                   </li>
                 </ul>

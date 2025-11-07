@@ -10,6 +10,8 @@
     "search": "Search..."
   },
   "hero": {
+    "blueText": "Child",
+    "roseText": "Development",
     "title": "Together We'll Explore New Things",
     "subtitle": "We believe everyone should have the opportunity to create progress through technology.",
     "cta1": "Find Courses",
@@ -93,12 +95,24 @@
     "title": "Get in Touch",
     "subtitle": "We are ready to help your child's development",
     "form": {
+      "formTitle": "Send us a message",
       "name": "Full Name",
       "email": "Email",
       "phone": "Phone",
       "service": "Service of Interest",
+      "servicePlaceholder": "Select a service",
+        "serviceOptions": {
+        "preschool": "Preschool Education",
+        "homeschooling": "Certificate Homeschooling",
+        "inclusion": "Inclusive Education",
+        "residence": "Cape Town Residence",
+        "other": "Other"
+      },
       "message": "Message",
-      "send": "Send Message"
+      "placeholderMessage": "Tell us how we can help...",
+      "send": "Send Message",
+      "location": "Location",
+      "visitUs": "Visit us in Luanda or Cape Town"
     },
     "info": {
       "title": "Contact Information",
@@ -116,10 +130,5 @@
       "capetown": "Cape Town",
       "teachers": "Teachers"
     }
-  },
-  "blog": {
-    "title": "Blog & News",
-    "subtitle": "Articles about education, parenting and innovation",
-    "readMore": "Read more"
   }
 }

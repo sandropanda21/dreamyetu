@@ -10,6 +10,8 @@
     "search": "Pesquisar..."
   },
   "hero": {
+    "blueText": "Desenvolvimento",
+    "roseText": "Infantil",
     "title": "Juntos Vamos Explorar Coisas Novas",
     "subtitle": "Acreditamos que todos devem ter a oportunidade de criar progresso através da educação.",
     "cta1": "Encontrar Cursos",
@@ -92,12 +94,24 @@
     "title": "Entre em Contacto",
     "subtitle": "Estamos prontos para ajudar no desenvolvimento do seu filho",
     "form": {
+      "formTitle": "Envie-nos uma mensagem",
       "name": "Nome Completo",
       "email": "E-mail",
       "phone": "Telefone",
       "service": "Serviço de Interesse",
+      "servicePlaceholder": "Selecione um serviço",
+      "serviceOptions": {
+        "preschool": "Educação Pré-Escolar",
+        "homeschooling": "Homeschooling Certificado",
+        "inclusion": "Educação Inclusiva",
+        "residence": "Residência Cape Town",
+        "other": "Outro"
+      },
       "message": "Mensagem",
-      "send": "Enviar Mensagem"
+      "placeholderMessage": "Conte-nos como podemos ajudar...",
+      "send": "Enviar Mensagem",
+      "location": "Localização",
+      "visitUs": "Visite-nos em Luanda ou Cape Town"
     },
     "info": {
       "title": "Informações de Contacto",
@@ -115,10 +129,5 @@
       "capetown": "Cape Town",
       "teachers": "Professores"
     }
-  },
-  "blog": {
-    "title": "Blog & Notícias",
-    "subtitle": "Artigos sobre educação, parentalidade e inovação",
-    "readMore": "Ler mais"
   }
 }

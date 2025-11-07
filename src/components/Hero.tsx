@@ -11,7 +11,6 @@ const Hero = () => {
 
   return (
     <div className="relative h-[450px] sm:h-[600px] lg:h-[700px] overflow-hidden">
-      {/* Background Image */}
       <div className="absolute inset-0">
         <div
           className="absolute inset-0 bg-cover bg-center"
@@ -19,8 +18,6 @@ const Hero = () => {
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/40" />
       </div>
-
-      {/* Navigation Arrows */}
       <button 
         onClick={() => setCurrentSlide(Math.max(0, currentSlide - 1))}
         className="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-10 sm:w-12 h-10 sm:h-12 bg-black/20 hover:bg-primary text-white rounded-full flex items-center justify-center transition-colors"
@@ -33,9 +30,7 @@ const Hero = () => {
       >
         →
       </button>
-
-      {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 h-full flex items-center">
+      <div className="relative z-10 container mx-auto h-full flex items-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -43,8 +38,8 @@ const Hero = () => {
           className="max-w-2xl"
         >
           <p className="text-base sm:text-2xl font-medium mb-2 sm:mb-4 uppercase tracking-wider">
-            <span className="text-primary mr-1">Dream</span>  
-            <span className="text-secondary">Yetu</span>
+            <span className="text-primary mr-1">{t('hero.blueText')}</span>  
+            <span className="text-secondary">{t('hero.roseText')}</span>
           </p>
           <h1 className="text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white  mb-3 sm:mb-6 leading-tight">
             {t('hero.title')}
