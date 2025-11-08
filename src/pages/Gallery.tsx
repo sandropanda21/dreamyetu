@@ -2,24 +2,37 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import classroomImg from '@/assets/classroom.jpg';
-import capetownImg from '@/assets/capetown.jpg';
-import inclusionImg from '@/assets/infantil1.jpeg';
-import heroImg from '@/assets/infantil1.jpeg';
+
+// 🖼️ Importa 10 imagens diferentes
+import img1 from '../../public/galeeria1.jpeg';
+import img2 from '../../public/galeeria2.jpeg';
+import img3 from '../../public/galeeria3.jpeg';
+import img4 from '../../public/galeeria4.jpeg';
+import img5 from '../../public/galeeria5.jpeg';
+import img6 from '../../public/galeeria6.jpeg';
+import img7 from '../../public/galeeria7.jpeg';
+import img8 from '../../public/galeeria7.jpeg';
+import img9 from '../../public/galeeria7.jpeg';
+
 const Gallery = () => {
   const { t } = useTranslation();
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [filter, setFilter] = useState('all');
 
+  // 🗂️ Lista de imagens (sem repetição)
   const images = [
-    { src: classroomImg, category: 'education', title: t('gallery.images.category1')},
-    { src: capetownImg, category: 'capetown', title: t('gallery.images.category2')},
-    { src: inclusionImg, category: 'education', title: t('gallery.images.category3') },
-    { src: heroImg, category: 'events', title: t('gallery.images.category1') },
-    { src: classroomImg, category: 'teachers', title: t('gallery.images.category1') },
-    { src: inclusionImg, category: 'education', title: t('gallery.images.category1') },
+    { src: img1, category: 'education', title: t('gallery.images.category1') },
+    { src: img2, category: 'events', title: t('gallery.images.category2') },
+    { src: img3, category: 'capetown', title: t('gallery.images.category3') },
+    { src: img4, category: 'teachers', title: t('gallery.images.category4') },
+    { src: img5, category: 'education', title: t('gallery.images.category5') },
+    { src: img6, category: 'events', title: t('gallery.images.category6') },
+    { src: img7, category: 'capetown', title: t('gallery.images.category7') },
+    { src: img8, category: 'teachers', title: t('gallery.images.category8') },
+    { src: img9, category: 'education', title: t('gallery.images.category9') },
   ];
 
+  // 🧩 Filtros
   const filters = [
     { id: 'all', label: t('gallery.filters.all') },
     { id: 'education', label: t('gallery.filters.education') },
@@ -28,6 +41,7 @@ const Gallery = () => {
     { id: 'teachers', label: t('gallery.filters.teachers') },
   ];
 
+  // 🔍 Filtro ativo
   const filteredImages =
     filter === 'all' ? images : images.filter((img) => img.category === filter);
 
@@ -46,7 +60,7 @@ const Gallery = () => {
         </div>
       </section>
 
-      {/* Filters */}
+      {/* Filtros */}
       <section className="py-8 bg-muted/30 top-20 z-40 backdrop-blur-sm">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap justify-center gap-3">
@@ -64,7 +78,7 @@ const Gallery = () => {
         </div>
       </section>
 
-      {/* Gallery Grid */}
+      {/* Grade da Galeria */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -88,7 +102,7 @@ const Gallery = () => {
         </div>
       </section>
 
-      {/* Image Modal */}
+      {/* Modal de Imagem */}
       {selectedImage && (
         <div
           className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4 animate-fade-in"
