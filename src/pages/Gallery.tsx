@@ -11,8 +11,8 @@ import img4 from '../../public/galeeria4.jpeg';
 import img5 from '../../public/galeeria5.jpeg';
 import img6 from '../../public/galeeria6.jpeg';
 import img7 from '../../public/galeeria7.jpeg';
-import img8 from '../../public/galeeria7.jpeg';
-import img9 from '../../public/galeeria7.jpeg';
+import img8 from '../../public/galeeria1101.jpeg.jpeg';
+import img9 from '../../public/galeeria1103.jpeg.jpeg';
 
 const Gallery = () => {
   const { t } = useTranslation();
