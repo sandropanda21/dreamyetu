@@ -12,12 +12,12 @@ const Gallery = () => {
   const [filter, setFilter] = useState('all');
 
   const images = [
-    { src: classroomImg, category: 'education', title: 'Sala de Aula Moderna' },
-    { src: capetownImg, category: 'capetown', title: 'Residência Cape Town' },
-    { src: inclusionImg, category: 'education', title: 'Educação Inclusiva' },
-    { src: heroImg, category: 'events', title: 'Atividades Educativas' },
-    { src: classroomImg, category: 'teachers', title: 'Formação de Professores' },
-    { src: inclusionImg, category: 'education', title: 'Aprendizagem Sensorial' },
+    { src: classroomImg, category: 'education', title: t('gallery.images.category1')},
+    { src: capetownImg, category: 'capetown', title: t('gallery.images.category2')},
+    { src: inclusionImg, category: 'education', title: t('gallery.images.category3') },
+    { src: heroImg, category: 'events', title: t('gallery.images.category1') },
+    { src: classroomImg, category: 'teachers', title: t('gallery.images.category1') },
+    { src: inclusionImg, category: 'education', title: t('gallery.images.category1') },
   ];
 
   const filters = [

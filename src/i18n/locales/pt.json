@@ -46,9 +46,45 @@
       "title": "Educação Inclusiva",
       "description": "Apoio psicopedagógico e terapias para necessidades especiais"
     },
+    "nanies": {
+     "title": "Babás Educadoras (BFFs)",
+     "description": "Profissionais formadas para cuidar e educar com relatórios trimestrais e apoio aos pais."
+    },
+     "programs": {
+     "title": "Programas After-School e Férias",
+     "description": "Clubes de línguas, reforço escolar, artes, música, ciências e campos de férias STEM."
+    },
+    "teacher": {
+     "title": "Formação de Professores",
+     "description": "Workshops semanais com metodologias inclusivas e inovação pedagógica."
+    },
+     "parentingTraining": {
+     "title": "Capacitação Parental",
+     "description": "Workshops e aconselhamento familiar com estratégias de disciplina positiva."
+    },
     "residence": {
       "title": "Residência Cape Town",
       "description": "Alojamento supervisionado para estudantes em Cape Town, África do Sul"
+    },
+    "research": {
+      "title": "Investigação e Inovação",
+      "description": "Pesquisa pedagógica e desenvolvimento educativo contínuo em Angola."
+    },
+    "certifiedHomeschooling": {
+      "title": "Homeschooling Certificado",
+      "description": "O nosso programa de homeschooling oferece educação flexível e certificada, adaptada ao ritmo e necessidades de cada criança.",
+      "firstModality": "Modalidade 1",
+      "firstModalityDescription": "Homeschooling Dream Yetu - Acompanhamento completo",
+      "secondModality": "Modalidade 2",
+      "secondModalityDescription": "Homeschooling pelos Pais - Suporte e certificação"
+    },
+    "studentResidence": {
+      "title": "Residência Estudantil Cape Town",
+      "description": "Alojamento supervisionado em Cape Town com ambiente familiar, alimentação balanceada e acompanhamento académico e psicológico completo.",
+      "benefit1": "Ambiente seguro e acolhedor",
+      "benefit2": "Supervisão 24/7",
+      "benefit3": "Apoio académico personalizado",
+      "benefit4": "Acompanhamento psicológico"    
     }
   },
   "testimonials": {
@@ -111,11 +147,12 @@
       "placeholderMessage": "Conte-nos como podemos ajudar...",
       "send": "Enviar Mensagem",
       "location": "Localização",
-      "visitUs": "Visite-nos em Luanda ou Cape Town"
+      "visitUs": "Visite-nos em Camama ou na centralidade de Sequele."
     },
     "info": {
       "title": "Informações de Contacto",
       "luanda": "Luanda, Angola",
+      "luandaLocations": "['Camama (Condomínio das Acácias, Casa J1)', 'Sequele (Bloco 6, Prédio 5, Entrada B, Apto.: 001)', '+244 927 228 993', '+244 930 292 592']",
       "capetown": "Cape Town, África do Sul"
     }
   },
@@ -128,6 +165,14 @@
       "events": "Eventos",
       "capetown": "Cape Town",
       "teachers": "Professores"
+    },
+    "images": {
+      "category1": "Sala de Aula Moderna",
+      "category2": "Residência Cape Town",
+      "category3": "Educação Inclusiva",
+      "category4": "Atividades Educativas",
+      "category5": "Formação de Professores",
+      "category6": "Aprendizagem Sensorial"
     }
   }
 }

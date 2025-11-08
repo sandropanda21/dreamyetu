@@ -17,6 +17,12 @@ const Services = () => {
 
   const allServices = [
     {
+      icon: Microscope,
+      title: t('services.research.title'),
+      description: t('services.research.description'),
+      color: 'accent' as const,
+    },
+    {
       icon: GraduationCap,
       title: t('services.preschool.title'),
       description: t('services.preschool.description'),
@@ -36,26 +42,26 @@ const Services = () => {
     },
     {
       icon: Users,
-      title: 'Babás Educadoras (BFFs)',
-      description: 'Profissionais formadas para cuidar e educar com relatórios trimestrais e apoio aos pais.',
+      title: t('services.nanies.title'),
+      description: t('services.nanies.description'),
       color: 'primary' as const,
     },
     {
       icon: Calendar,
-      title: 'Programas After-School e Férias',
-      description: 'Clubes de línguas, reforço escolar, artes, música, ciências e campos de férias STEM.',
+      title: t('services.programs.title'),
+      description: t('services.programs.description'),
       color: 'secondary' as const,
     },
     {
       icon: BookOpen,
-      title: 'Formação de Professores',
-      description: 'Workshops semanais com metodologias inclusivas e inovação pedagógica.',
+      title: t('services.teacher.title'),
+      description: t('services.teacher.description'),
       color: 'accent' as const,
     },
     {
       icon: HeartHandshake,
-      title: 'Capacitação Parental',
-      description: 'Workshops e aconselhamento familiar com estratégias de disciplina positiva.',
+      title: t('services.parentingTraining.title'),
+      description: t('services.parentingTraining.description'),
       color: 'primary' as const,
     },
     {
@@ -64,14 +70,8 @@ const Services = () => {
       description: t('services.residence.description'),
       color: 'secondary' as const,
     },
-    {
-      icon: Microscope,
-      title: 'Investigação e Inovação',
-      description: 'Pesquisa pedagógica e desenvolvimento educativo contínuo em Angola.',
-      color: 'accent' as const,
-    },
+   
   ];
-
   return (
     <>
       <section className="relative pt-20 sm:pt-32 pb-12 sm:pb-20 bg-classroom bg-[position:center_72%] bg-[length:100%] bg-no-repeat">
@@ -102,21 +102,20 @@ const Services = () => {
                 <div className="w-16 h-16 rounded-2xl bg-secondary text-secondary-foreground flex items-center justify-center">
                   <HomeIcon className="w-6 sm:w-8 h-6 sm:h-8" />
                 </div>
-                <h2 className="text-lg sm:text-3xl font-bold">Homeschooling Certificado</h2>
+                <h2 className="text-lg sm:text-3xl font-bold">{t('services.certifiedHomeschooling.title')}</h2>
               </div>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  O nosso programa de homeschooling oferece educação flexível e certificada,
-                  adaptada ao ritmo e necessidades de cada criança.
+                  {t('services.certifiedHomeschooling.description')}
                 </p>
                 <div className="grid md:grid-cols-2 gap-4 mt-6">
                   <div className="bg-muted/50 p-4 rounded-lg">
-                    <h3 className="font-bold text-foreground mb-2">Modalidade 1</h3>
-                    <p className="text-sm">Homeschooling Dream Yetu - Acompanhamento completo</p>
+                    <h3 className="font-bold text-foreground mb-2">{t('services.certifiedHomeschooling.firstModality')}</h3>
+                    <p className="text-sm">{t('services.certifiedHomeschooling.firstModalityDescription')}</p>
                   </div>
                   <div className="bg-muted/50 p-4 rounded-lg">
-                    <h3 className="font-bold text-foreground mb-2">Modalidade 2</h3>
-                    <p className="text-sm">Homeschooling pelos Pais - Suporte e certificação</p>
+                    <h3 className="font-bold text-foreground mb-2">{t('services.certifiedHomeschooling.secondModality')}</h3>
+                    <p className="text-sm">{t('services.certifiedHomeschooling.secondModalityDescription')}</p>
                   </div>
                 </div>
               </div>
@@ -126,29 +125,28 @@ const Services = () => {
                 <div className="w-16 h-16 rounded-2xl bg-primary text-primary-foreground flex items-center justify-center">
                   <Building2 className="w-6 sm:w-8 h-6 sm:h-8" />
                 </div>
-                <h2 className="text-lg sm:text-3xl font-bold">Residência Estudantil Cape Town</h2>
+                <h2 className="text-lg sm:text-3xl font-bold">{t('services.studentResidence.title')}</h2>
               </div>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  Alojamento supervisionado em Cape Town com ambiente familiar, alimentação
-                  balanceada e acompanhamento académico e psicológico completo.
+                  {t('services.studentResidence.description')}
                 </p>
                 <ul className="space-y-2 mt-4">
                   <li className="flex items-center space-x-2">
                     <div className="w-1 sm:w-2 sm:h-2 rounded-full bg-primary" />
-                    <span>Ambiente seguro e acolhedor</span>
+                    <span>{t('services.studentResidence.benefit1')}</span>
                   </li>
                   <li className="flex items-center space-x-2">
                     <div className="w-1 sm:w-2 sm:h-2 rounded-full bg-primary" />
-                    <span>Supervisão 24/7</span>
+                    <span>{t('services.studentResidence.benefit2')}</span>
                   </li>
                   <li className="flex items-center space-x-2">
                     <div className="w-1 sm:w-2 sm:h-2 rounded-full bg-primary" />
-                    <span>Apoio académico personalizado</span>
+                    <span>{t('services.studentResidence.benefit3')}</span>
                   </li>
                   <li className="flex items-center space-x-2">
                     <div className="w-1 sm:w-2 sm:h-2 rounded-full bg-primary" />
-                    <span>Acompanhamento psicológico</span>
+                    <span>{t('services.studentResidence.benefit4')}</span>
                   </li>
                 </ul>
               </div>

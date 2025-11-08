@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import WhatsApp from '@/assets/icons/whatsappIcon.svg'
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -26,12 +27,12 @@ const Contact = () => {
     {
       icon: MapPin,
       title: t('contact.info.luanda'),
-      details: ['Luanda, Angola', '+244 xxx xxx xxx'],
+      details: ['Camama (Condomínio das Acácias, Casa J1)', 'Centralidade do Sequele (Bloco 6, Prédio 5, Entrada B, Apto.: 001)', '(+244) 927 228 993', '(+244) 930 292 592'],
     },
     {
       icon: MapPin,
       title: t('contact.info.capetown'),
-      details: ['Cape Town, South Africa', '+27 76 113 8020'],
+      details: ['Cape Town, South Africa', '+27 76 113 8020']
     },
     {
       icon: Mail,
@@ -159,7 +160,7 @@ const Contact = () => {
               <Card className="p-8">
                 <h3 className="text-2xl font-bold mb-4">{t('contact.form.location')}</h3>
                 <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
-                  <MapPin className="w-12 h-12 text-muted-foreground" />
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.833826535474!2d13.260748499999998!3d-8.8950369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a51f5003567ad9d%3A0xfe8b9123ff8ac02!2sCondom%C3%ADnio%20Ac%C3%A1cias%20(Cooperativa%20Cajueiro)!5e0!3m2!1spt-PT!2sao!4v1762605042605!5m2!1spt-PT!2sao" className="w-full h-full border-0" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Localização da Dream Yetu - Condomínio Acácias (Cooperativa Cajueiro)"/>
                 </div>
                 <p className="text-sm text-muted-foreground mt-4">
                   {t('contact.form.visitUs')}
@@ -172,13 +173,13 @@ const Contact = () => {
 
       {/* WhatsApp Float Button */}
       <a
-        href="https://wa.me/27761138020"
+        href="https://wa.me/244930292592"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 w-14 h-14 bg-[#25D366] hover:bg-[#20BA5A] rounded-full shadow-lg flex items-center justify-center z-50 hover-lift"
+        className="fixed bottom-6 right-6 w-14 h-14 rounded-full shadow-lg flex items-center justify-center z-50 hover-lift"
         aria-label="WhatsApp"
       >
-        <Phone className="w-7 h-7 text-white" />
+        <img src={WhatsApp} alt="WhatsApp" />
       </a>
     </>
   );

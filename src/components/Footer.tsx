@@ -7,9 +7,8 @@ const Footer = () => {
   const { t } = useTranslation();
 
   const socialLinks = [
-    { icon: Facebook, href: '#', label: 'Facebook' },
+    { icon: Facebook, href: 'https://www.facebook.com/share/1BDxv8Fbyg/', label: 'Facebook' },
     { icon: Instagram, href: '#', label: 'Instagram' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
   ];
 
   const quickLinks = [
@@ -40,6 +39,7 @@ const Footer = () => {
                 <a
                   key={social.label}
                   href={social.href}
+                  target='_blank'
                   className="w-9 h-9 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-colors flex items-center justify-center"
                   aria-label={social.label}
                 >
@@ -72,9 +72,17 @@ const Footer = () => {
                 <MapPin className="w-4 h-4 mt-0.5 text-white flex-shrink-0" />
                 <span>Luanda, Angola</span>
               </li>
+              <li className="flex items-start space-x-2 text-sm text-white">
+                <span>Camama (Condomínio das Acácias, Casa J1)</span>
+              </li>
+              <li className="flex items-start space-x-2 text-sm text-white">
+                <span>Centralidade do Sequele (Bloco 6, Prédio 5, Entrada B, Apto.: 001) </span>
+              </li>
               <li className="flex items-center space-x-2 text-sm text-white">
                 <Phone className="w-4 h-4 text-white flex-shrink-0" />
-                <span>+244 xxx xxx xxx</span>
+                <span>+244 927 228 993</span>
+                <span>+244 930 292 592</span>
+
               </li>
               <li className="flex items-center space-x-2 text-sm text-white">
                 <Mail className="w-4 h-4 text-white flex-shrink-0" />

@@ -46,9 +46,45 @@
       "title": "Inclusive Education",
       "description": "Psycho-pedagogical support and therapies for special needs"
     },
-    "residence": {
+     "nanies": {
+     "title": "Educational Nannies (BFFs)",
+     "description": "Professionals trained to care for and educate children, with quarterly reports and support for parents."
+    },
+     "programs": {
+     "title": "After-School and Vacation Programs",
+     "description": "Language clubs, tutoring, arts, music, science, and STEM summer camps."
+    },
+    "teacher": {
+     "title": "Teacher Training",
+     "description": "Weekly workshops with inclusive methodologies and pedagogical innovation."
+    },
+     "parentingTraining": {
+     "title": "Parenting Training",
+     "description": "Workshops and family counseling with positive discipline strategies."
+    },
+      "residence": {
       "title": "Cape Town Residence",
       "description": "Supervised accommodation for students in Cape Town, South Africa"
+    },
+     "research": {
+      "title": "Research and Innovation",
+      "description": "Pedagogical research and continuous educational development in Angola."
+    },
+    "certifiedHomeschooling": {
+      "title": "Certified Homeschooling",
+      "description": "Our homeschooling program offers flexible, certified education tailored to each child's pace and needs.",
+      "firstModality": "Modality 1",
+      "firstModalityDescription": "Homeschooling Dream Yetu - Comprehensive support",
+      "secondModality": "Modality 2",
+      "secondModalityDescription": "Homeschooling by Parents - Support and certification"
+    },
+    "studentResidence": {
+      "title": "Student Residence Cape Town",
+      "description": "Supervised accommodation in Cape Town with a family atmosphere, balanced meals, and comprehensive academic and psychological support.",
+      "benefit1": "Safe and welcoming environment",
+      "benefit2": "24/7 supervision",
+      "benefit3": "Personalized academic support",
+      "benefit4": "Psychological counseling"    
     }
   },
   "testimonials": {
@@ -112,11 +148,12 @@
       "placeholderMessage": "Tell us how we can help...",
       "send": "Send Message",
       "location": "Location",
-      "visitUs": "Visit us in Luanda or Cape Town"
+      "visitUs": "Visit us in Camama or the center of Sequele."
     },
     "info": {
       "title": "Contact Information",
       "luanda": "Luanda, Angola",
+      "luandaLocations": "['Camama (Condominium das Acácias, House J1)', 'Sequele (Block 6, Building 5, Entrance B, Apartment: 001)', '+244 927 228 993', '+244 930 292 592']",
       "capetown": "Cape Town, South Africa"
     }
   },
@@ -129,6 +166,14 @@
       "events": "Events",
       "capetown": "Cape Town",
       "teachers": "Teachers"
+    },
+    "images": {
+      "category1": "Modern Classroom",
+      "category2": "Cape Town Residence",
+      "category3": "Inclusive Education",
+      "category4": "Atividades Educativas",
+      "category5": "Teacher Training",
+      "category6": "Sensory Learning"
     }
   }
 }
