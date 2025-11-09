@@ -40,7 +40,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      details: ['info@dreamyetu.com', 'capetown@dreamyetu.com'],
+      details: ['geral@dreamyetu.com', 'residencial.capetown@dreamyetu.com'],
     },
   ];
 

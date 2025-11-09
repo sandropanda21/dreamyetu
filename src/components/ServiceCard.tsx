@@ -11,10 +11,11 @@ interface ServiceCardProps {
 }
 
 const ServiceCard = ({ icon: Icon, title, description, color, delay = 0 }: ServiceCardProps) => {
+  // 🔶 Define cores específicas
   const colorClasses = {
-    primary: 'bg-primary text-primary-foreground',
-    secondary: 'bg-secondary text-secondary-foreground',
-    accent: 'bg-accent text-accent-foreground',
+    primary: 'bg-red-500 text-white',      // Vermelho suave
+    secondary: 'bg-orange-500 text-white', // Laranja vibrante
+    accent: 'bg-orange-500 text-white',    // Laranja também
   };
 
   return (
@@ -24,7 +25,7 @@ const ServiceCard = ({ icon: Icon, title, description, color, delay = 0 }: Servi
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay }}
     >
-      <Card className="p-8 h-full card-interactive group">
+      <Card className="p-8 h-full card-interactive group transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
         <div
           className={`w-16 h-16 rounded-2xl ${colorClasses[color]} flex items-center justify-center mb-6 group-hover:scale-105 transition-transform duration-300 shadow-soft`}
         >
