@@ -39,7 +39,7 @@ const Footer = () => {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-9 h-9 rounded-full bg-muted text-white hover:bg-orange-400 hover:text-white transition-all duration-300 flex items-center justify-center"
+                  className="w-9 h-9 rounded-full bg-muted text-black hover:bg-orange-400 hover:text-white transition-all duration-300 flex items-center justify-center"
                   aria-label={social.label}
                 >
                   <social.icon className="w-4 h-4" />
@@ -86,7 +86,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center space-x-2 text-sm text-white">
                 <Mail className="w-4 h-4 text-white flex-shrink-0" />
-                <span>info@dreamyetu.com</span>
+                <span>geral@dreamyetu.com</span>
               </li>
             </ul>
           </div>
