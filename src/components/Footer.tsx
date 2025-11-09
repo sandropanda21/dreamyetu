@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import Logo from '@/assets/logo.jpeg'
-import { Facebook, Instagram, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
+import Logo from '@/assets/logo.jpeg';
+import { Facebook, Instagram, Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -27,20 +27,19 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <div className="w-10 h-10 rounded-full gradient-hero flex items-center justify-center">
-                <img src={Logo} alt="Dream Yetu logo" className="rounded-full"/>
+                <img src={Logo} alt="Dream Yetu logo" className="rounded-full" />
               </div>
               <span className="text-white text-xl font-bold">Dream Yetu</span>
             </div>
-            <p className="text-sm text-white">
-              {t('footer.aboutText')}
-            </p>
+            <p className="text-sm text-white">{t('footer.aboutText')}</p>
             <div className="flex space-x-3">
               {socialLinks.map((social) => (
                 <a
                   key={social.label}
                   href={social.href}
-                  target='_blank'
-                  className="w-9 h-9 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-colors flex items-center justify-center"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-9 h-9 rounded-full bg-muted text-white hover:bg-orange-400 hover:text-white transition-all duration-300 flex items-center justify-center"
                   aria-label={social.label}
                 >
                   <social.icon className="w-4 h-4" />
@@ -48,14 +47,16 @@ const Footer = () => {
               ))}
             </div>
           </div>
+
+          {/* Quick Links */}
           <div>
-            <h3 className=" text-white text-lg mb-4">{t('footer.quickLinks')}</h3>
+            <h3 className="text-white text-lg mb-4">{t('footer.quickLinks')}</h3>
             <ul className="space-y-2">
               {quickLinks.map((link) => (
                 <li key={link.path}>
                   <Link
                     to={link.path}
-                    className="text-sm text-white hover:text-primary transition-colors"
+                    className="text-sm text-white hover:text-orange-400 transition-colors duration-300"
                   >
                     {link.label}
                   </Link>
@@ -76,13 +77,12 @@ const Footer = () => {
                 <span>Camama (Condomínio das Acácias, Casa J1)</span>
               </li>
               <li className="flex items-start space-x-2 text-sm text-white">
-                <span>Centralidade do Sequele (Bloco 6, Prédio 5, Entrada B, Apto.: 001) </span>
+                <span>Centralidade do Sequele (Bloco 6, Prédio 5, Entrada B, Apto.: 001)</span>
               </li>
               <li className="flex items-center space-x-2 text-sm text-white">
                 <Phone className="w-4 h-4 text-white flex-shrink-0" />
                 <span>+244 927 228 993</span>
                 <span>+244 930 292 592</span>
-
               </li>
               <li className="flex items-center space-x-2 text-sm text-white">
                 <Mail className="w-4 h-4 text-white flex-shrink-0" />
