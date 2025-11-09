@@ -8,6 +8,25 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
+
+      /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-muted;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #ffa564; /* Laranja principal */
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #fb923c; /* Laranja mais claro no hover */
+  }
+
     /* Dream Yetu Brand Colors */
     --background: 0 0% 100%;
     --foreground: 220 15% 20%;
