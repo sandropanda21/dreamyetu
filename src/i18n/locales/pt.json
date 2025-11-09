@@ -1,7 +1,7 @@
 {
   "nav": {
     "home": "Início",
-    "services": "Cursos",
+    "services": "serviços",
     "about": "Sobre",
     "gallery": "Galeria",
     "blog": "Blog",
@@ -14,7 +14,7 @@
     "roseText": "Infantil",
     "title": "Juntos Vamos Explorar Coisas Novas",
     "subtitle": "Acreditamos que todos devem ter a oportunidade de criar progresso através da educação.",
-    "cta1": "Encontrar Cursos",
+    "cta1": "Encontrar serviços",
     "cta2": "Contacte-nos"
   },
   "features": {

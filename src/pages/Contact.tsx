@@ -15,6 +15,9 @@ import {
 } from '@/components/ui/select';
 import { toast } from 'sonner';
 
+// ⭐ Importe sua nova imagem de background aqui
+import heroBackground from '../../public/galeeria1.jpeg';
+
 const Contact = () => {
   const { t } = useTranslation();
 
@@ -43,10 +46,13 @@ const Contact = () => {
 
   return (
     <>
-      {/* Hero Section */}
-      <section className="relative pt-32 pb-20 bg-kidsSmile bg-center bg-cover bg-no-repeat">
-        <div className="absolute inset-0 bg-black/20"></div>
-        <div className="container mx-auto px-4 text-center">
+      {/* Hero Section - Background alterado */}
+      <section 
+        className="relative pt-32 pb-20 bg-center bg-cover bg-no-repeat"
+        style={{ backgroundImage: `url(${heroBackground})` }} // ⭐ Background alterado aqui
+      >
+        <div className="absolute inset-0 bg-black/50"></div> {/* Overlay mais escuro para contraste */}
+        <div className="container mx-auto px-4 text-center relative z-10">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
             {t('contact.title')}
           </h1>

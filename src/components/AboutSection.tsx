@@ -11,7 +11,7 @@ const AboutSection = () => {
   const { t } = useTranslation();
 
   const features = [
-    t('about.feature1') || 'Access to all our courses',
+    t('about.feature1') || 'Access to all our courses ',
     t('about.feature2') || 'Learn the latest skills',
     t('about.feature3') || 'Upskill your organization',
   ];

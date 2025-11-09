@@ -66,7 +66,7 @@ const Gallery = () => {
     <>
       {/* Hero Section - Background com mais contraste */}
       <section 
-        className="relative pt-32 pb-20 bg-center bg-cover bg-no-repeat"
+        className="relative pt-32 pb-20 bg-center bg-cover  bg-no-repeat"
         style={{ backgroundImage: `url(${heroBackground})` }}
       >
         {/* Overlay mais escuro para melhor contraste */}

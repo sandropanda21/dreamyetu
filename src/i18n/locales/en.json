@@ -1,7 +1,7 @@
 {
   "nav": {
     "home": "Home",
-    "services": "Courses",
+    "services": "services",
     "about": "About",
     "gallery": "Gallery",
     "blog": "Blog",
@@ -14,7 +14,7 @@
     "roseText": "Development",
     "title": "Together We'll Explore New Things",
     "subtitle": "We believe everyone should have the opportunity to create progress through technology.",
-    "cta1": "Find Courses",
+    "cta1": "Find Services",
     "cta2": "Contact Us"
   },
   "features": {

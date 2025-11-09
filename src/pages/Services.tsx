@@ -12,6 +12,8 @@ import {
 } from 'lucide-react';
 import ServiceCard from '@/components/ServiceCard';
 
+import heroBackground from '../../public/galeeria1102.jpeg.jpeg';
+
 const Services = () => {
   const { t } = useTranslation();
 
@@ -74,11 +76,14 @@ const Services = () => {
   ];
   return (
     <>
-      <section className="relative pt-20 sm:pt-32 pb-12 sm:pb-20 bg-classroom bg-[position:center_72%] bg-[length:100%] bg-no-repeat">
+      <section 
+        className="relative pt-20 sm:pt-32 pb-12 sm:pb-20 bg-center bg-cover bg-no-repeat"
+        style={{ backgroundImage: `url(${heroBackground})` }}
+      >
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="relative container mx-auto px-4 text-center">
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
-            {t('services.title')}
+            Nossos Serviços {/* Alterado de {t('services.title')} para texto direto */}
           </h1>
           <p className="text-lg sm:text-xl text-white/90 max-w-3xl mx-auto animate-fade-in">
             {t('services.subtitle')}
