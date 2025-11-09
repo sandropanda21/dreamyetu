@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import infantil1 from '@/assets/infantil1.jpeg';
 import infantil2 from '@/assets/infantil2.jpeg';
-import capetown from '@/assets/capetown.jpg';
+import capetown from '../../public/galeeria1101.jpeg.jpeg';
 
 const AboutSection = () => {
   const { t } = useTranslation();
