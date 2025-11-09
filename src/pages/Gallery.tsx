@@ -45,7 +45,7 @@ const Gallery = () => {
     { src: img14, category: 'desenvolvimento', title: 'Conquistas Infantis' },
   ];
 
-  // 🧩 Filtros atualizados
+  // 🧩 Filtros
   const filters = [
     { id: 'all', label: 'Todas' },
     { id: 'aprendizado', label: 'Aprendizado' },
@@ -64,12 +64,11 @@ const Gallery = () => {
 
   return (
     <>
-      {/* Hero Section - Background com mais contraste */}
+      {/* Hero Section */}
       <section 
-        className="relative pt-32 pb-20 bg-center bg-cover  bg-no-repeat"
+        className="relative pt-32 pb-20 bg-center bg-cover bg-no-repeat"
         style={{ backgroundImage: `url(${heroBackground})` }}
       >
-        {/* Overlay mais escuro para melhor contraste */}
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="container mx-auto px-4 text-center relative z-10">
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
@@ -92,8 +91,8 @@ const Gallery = () => {
                 onClick={() => setFilter(f.id)}
                 className={
                   filter === f.id 
-                    ? 'bg-primary hover:bg-primary-dark text-white' 
-                    : 'bg-white hover:bg-gray-100 text-gray-800 border-gray-300'
+                    ? 'bg-orange-500 hover:bg-orange-400 text-white shadow-md' 
+                    : 'bg-white hover:bg-orange-50 text-gray-800 border border-orange-200'
                 }
               >
                 {f.label}
@@ -108,7 +107,9 @@ const Gallery = () => {
         <div className="container mx-auto px-4">
           {filteredImages.length === 0 ? (
             <div className="text-center py-12">
-              <p className="text-lg text-gray-600">Nenhuma imagem encontrada para este filtro.</p>
+              <p className="text-lg text-gray-600">
+                Nenhuma imagem encontrada para este filtro.
+              </p>
             </div>
           ) : (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -124,7 +125,9 @@ const Gallery = () => {
                     className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                    <p className="text-white font-semibold p-4 text-sm sm:text-base">{image.title}</p>
+                    <p className="text-white font-semibold p-4 text-sm sm:text-base">
+                      {image.title}
+                    </p>
                   </div>
                 </div>
               ))}
@@ -140,7 +143,7 @@ const Gallery = () => {
           onClick={() => setSelectedImage(null)}
         >
           <button
-            className="absolute top-4 right-4 text-white hover:text-primary transition-colors z-10 bg-black/50 rounded-full p-2"
+            className="absolute top-4 right-4 text-white hover:text-orange-400 transition-colors z-10 bg-black/50 rounded-full p-2"
             onClick={() => setSelectedImage(null)}
           >
             <X className="w-6 h-6 sm:w-8 sm:h-8" />

@@ -131,7 +131,7 @@ const Contact = () => {
                 <Button
                   type="submit"
                   size="lg"
-                  className="w-full bg-primary hover:bg-primary-dark text-lg h-12"
+                  className="w-full bg-orange-500 hover:bg-orange-40 text-lg h-12"
                 >
                   <Send className="w-5 h-5 mr-2" />
                   {t('contact.form.send')}

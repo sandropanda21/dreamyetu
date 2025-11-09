@@ -50,7 +50,7 @@ const Hero = () => {
           <Link to="/services">
             <Button
               size="lg"
-              className="bg-primary hover:bg-primary-dark text-white px-4 sm:px-8 py-3 sm:py-6 h-auto sm:h-12 text-sm sm:text-base font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300  sm:rounded-xl"
+              className="bg-orange-500 hover:bg-orange-30 text-white px-4 sm:px-8 py-3 sm:py-6 h-auto sm:h-12 text-sm sm:text-base font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300  sm:rounded-xl"
             >
               {t('hero.cta1')}
             </Button>

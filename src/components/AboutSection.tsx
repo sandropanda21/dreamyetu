@@ -70,11 +70,12 @@ const AboutSection = () => {
               }
             </p>
             <Link to="/about">
-              <Button 
-                className="bg-primary hover:bg-primary-dark text-white px-4 sm:px-8 py-6 rounded-lg font-semibold h-9"
-              >
-                {t('common.readMore') || 'Read More'}
-              </Button>
+             <Button
+  className="bg-orange-500 hover:bg-orange-400 text-white px-4 sm:px-8 py-6 rounded-lg font-semibold h-9"
+>
+  {t('common.readMore') || 'Read More'}
+</Button>
+
             </Link>
           </motion.div>
         </div>
