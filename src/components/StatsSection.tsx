@@ -8,7 +8,7 @@ const StatsSection = () => {
   const stats = [
     {
       icon: Globe2,
-      number: '3',
+      number: '5',
       suffix: '+',
       label: t('stats.experience') || 'Years of Language Education Experience',
     },

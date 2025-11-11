@@ -30,7 +30,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: t('contact.info.luanda'),
-      details: ['Camama (Condomínio das Acácias, Casa J1)', 'Centralidade do Sequele (Bloco 6, Prédio 5, Entrada B, Apto.: 001)', '(+244) 927 228 993', '(+244) 930 292 592'],
+      details: ['Camama (Condomínio das Acácias, Casa J1 ( + 244 927 228 993  )', 'Centralidade do Sequele (Bloco 6, Prédio 5, Entrada B, Apto.:  001 ( +244 930 292 592 )', ' ', ' '],
     },
     {
       icon: MapPin,
@@ -177,7 +177,6 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* WhatsApp Float Button */}
       <a
         href="https://wa.me/244930292592"
         target="_blank"

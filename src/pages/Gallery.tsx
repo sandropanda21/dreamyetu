@@ -49,6 +49,7 @@ import nova26 from '../../public/nova26.jpeg';
 import nova27 from '../../public/nova27.jpeg';
 import nova28 from '../../public/nova28.jpeg';
 import nova29 from '../../public/nova29.jpeg';
+
 // 🌄 Imagem de background
 import heroBackground from '../assets/infantil1.jpeg';
 
@@ -57,65 +58,61 @@ const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [filter, setFilter] = useState('all');
 
-  // 🗂️ Lista completa de imagens
+  // 🗂️ Lista completa de imagens (todas as "brincadeiras" → "aprendizado")
   const images = [
     { src: img1, category: 'aprendizado', title: 'Aprendizado Divertido' },
     { src: img2, category: 'eventos', title: 'Formatura' },
-    { src: img3, category: 'brincadeiras', title: 'Brincadeiras Criativas' },
+    { src: img3, category: 'aprendizado', title: 'Brincadeiras Criativas' },
     { src: img4, category: 'Equipa', title: 'Dedicação dos Educadores' },
     { src: img5, category: 'aprendizado', title: 'Descobertas Diárias' },
     { src: img6, category: 'eventos', title: 'Festas Temáticas' },
-    { src: img7, category: 'desenvolvimento', title: 'Crescimento Saudável' },
+    { src: img7, category: 'eventos', title: 'Crescimento Saudável' },
     { src: img8, category: 'Equipa', title: 'Ensino Personalizado' },
     { src: img9, category: 'aprendizado', title: 'Explorando Novos Mundos' },
-    { src: img10, category: 'atividades', title: 'Arte e Expressão' },
-    { src: img11, category: 'recreacao', title: 'Diversão no Parque' },
+    { src: img10, category: 'eventos', title: 'Arte e Expressão' },
+    { src: img11, category: 'eventos', title: 'Diversão no Parque' },
     { src: img12, category: 'aprendizado', title: 'Aprendizado Prático' },
-    { src: img13, category: 'criatividade', title: 'Imaginação em Ação' },
-    { src: img14, category: 'desenvolvimento', title: 'Conquistas Infantis' },
+    { src: img13, category: 'eventos', title: 'Imaginação em Ação' },
+    { src: img14, category: 'eventos', title: 'Conquistas Infantis' },
 
-    // 🆕 Novas imagens (categorias variadas)
+    // 🆕 Novas imagens redistribuídas
     { src: nova1, category: 'aprendizado', title: 'Momento de Aprendizado' },
-    { src: nova2, category: 'brincadeiras', title: 'Alegria e Diversão' },
+    { src: nova2, category: 'aprendizado', title: 'Alegria e Diversão' },
     { src: nova3, category: 'eventos', title: 'Celebração Especial' },
     { src: nova4, category: 'Equipa', title: 'Trabalho em Equipa' },
-    { src: nova5, category: 'criatividade', title: 'Expressão Artística' },
-    { src: nova6, category: 'desenvolvimento', title: 'Crescendo Juntos' },
+    { src: nova5, category: 'eventos', title: 'Expressão Artística' },
+    { src: nova6, category: 'aprendizado', title: 'Crescendo Juntos' },
     { src: nova7, category: 'aprendizado', title: 'Descobrindo o Mundo' },
-    { src: nova8, category: 'brincadeiras', title: 'Jogos Educativos' },
-    { src: nova9, category: 'atividades', title: 'Atividades Criativas' },
-    { src: nova10, category: 'recreacao', title: 'Sorrisos e Energia' },
+    { src: nova8, category: 'aprendizado', title: 'Jogos Educativos' },
+    { src: nova9, category: 'eventos', title: 'Atividades Criativas' },
+    { src: nova10, category: 'eventos', title: 'Sorrisos e Energia' },
     { src: nova11, category: 'eventos', title: 'Momentos Especiais' },
     { src: nova12, category: 'Equipa', title: 'Colaboração e Dedicação' },
     { src: nova13, category: 'aprendizado', title: 'Novas Descobertas' },
-    { src: nova14, category: 'brincadeiras', title: 'Alegria Compartilhada' },
-    { src: nova15, category: 'criatividade', title: 'Pequenos Artistas' },
-    { src: nova16, category: 'desenvolvimento', title: 'Evolução Diária' },
+    { src: nova14, category: 'aprendizado', title: 'Alegria Compartilhada' },
+    { src: nova15, category: 'eventos', title: 'Pequenos Artistas' },
+    { src: nova16, category: 'aprendizado', title: 'Evolução Diária' },
     { src: nova17, category: 'aprendizado', title: 'Conhecimento em Ação' },
     { src: nova18, category: 'eventos', title: 'Celebração Escolar' },
     { src: nova19, category: 'Equipa', title: 'União e Cuidado' },
-    { src: nova20, category: 'recreacao', title: 'Felicidade ao Ar Livre' },
-    { src: nova21, category: 'atividades', title: 'Oficinas Criativas' },
+    { src: nova20, category: 'eventos', title: 'Felicidade ao Ar Livre' },
+    { src: nova21, category: 'eventos', title: 'Oficinas Criativas' },
     { src: nova22, category: 'aprendizado', title: 'Explorando Ideias' },
-    { src: nova23, category: 'brincadeiras', title: 'Diversão em Grupo' },
-    { src: nova24, category: 'desenvolvimento', title: 'Crescimento Positivo' },
-    { src: nova25, category: 'criatividade', title: 'Mãos à Obra' },
+    { src: nova23, category: 'eventos', title: 'Diversão em Grupo' },
+    { src: nova24, category: 'aprendizado', title: 'Crescimento Positivo' },
+    { src: nova25, category: 'eventos', title: 'Mãos à Obra' },
     { src: nova26, category: 'eventos', title: 'Dia Especial' },
-    { src: nova27, category: 'recreacao', title: 'Brincar e Aprender' },
+    { src: nova27, category: 'eventos', title: 'Brincar e Aprender' },
     { src: nova28, category: 'aprendizado', title: 'Aprendizado Alegre' },
     { src: nova29, category: 'Equipa', title: 'Educar com Amor' },
   ];
 
+  // 🧩 Filtros finais (sem "brincadeiras")
   const filters = [
     { id: 'all', label: 'Todas' },
     { id: 'aprendizado', label: 'Aprendizado' },
     { id: 'eventos', label: 'Eventos' },
-    { id: 'brincadeiras', label: 'Brincadeiras' },
     { id: 'Equipa', label: 'Equipa' },
-    { id: 'desenvolvimento', label: 'Desenvolvimento' },
-    { id: 'atividades', label: 'Atividades' },
-    { id: 'recreacao', label: 'Recreação' },
-    { id: 'criatividade', label: 'Criatividade' },
   ];
 
   const filteredImages = filter === 'all' ? images : images.filter((img) => img.category === filter);
@@ -160,7 +157,7 @@ const Gallery = () => {
         </div>
       </section>
 
-      {/* Grade da Galeria */}
+      {/* Grade */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           {filteredImages.length === 0 ? (
