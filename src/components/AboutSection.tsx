@@ -54,7 +54,7 @@ const AboutSection = () => {
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ durationgit init: 0.8 }}
             viewport={{ once: true }}
           >
             <span className="inline-block px-2 sm:px-4 py-[.1875rem] sm:py-1.5 bg-primary/10 text-primary font-semibold text-xs sm:text-sm rounded-full mb-3 sm:mb-4">
@@ -64,7 +64,7 @@ const AboutSection = () => {
                 <span className="text-primary mr-1">DREAM</span>  
                 <span className="text-secondary">YETU</span>
             </h2>
-            <p className="text-muted-foreground text-justify text-sm sm:text-lg mb-4 sm:mb-8 leading-relaxed">
+            <p className="text-muted-foreground  text-center text-sm sm:text-lg mb-4 sm:mb-8 leading-relaxed">
               {t('about.description') || 
                 'Not only can university offer an environment rich in our social an cultural experiences.'
               }
