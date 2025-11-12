@@ -14,13 +14,13 @@ const StatsSection = () => {
     },
     {
       icon: Users,
-      number: '10',
+      number: '33',
       suffix: '+',
       label: t('stats.teachers') || 'Qualified Teachers and language experts',
     },
     {
       icon: GraduationCap,
-      number: '11',
+      number: '78',
       suffix: '+',
       label: t('stats.enrolled') || 'Learners Enrolled in Educal Courses',
     },

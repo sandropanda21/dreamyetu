@@ -121,9 +121,11 @@
   "stats": {
     "experience": "Years of Education Experience",
     "courses": "Innovative Online Courses",
-    "teachers": "Qualified Teachers and experts",
+    "teachers": "Qualified professionals and specialists",
     "enrolled": "Learners Enrolled in Courses"
   },
+
+  
   "common": {
     "readMore": "Read More"
   },
