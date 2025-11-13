@@ -36,7 +36,7 @@ const Navbar = () => {
               <Mail className="h-3 w-3 sm:h-6 sm:w-6" />
               <span className="text-[.625rem] sm:text-[.875rem]">geral@dreamyetu.com</span>
               <MapPin className="h-3 w-3 sm:h-6 sm:w-6" />
-              <span className="text-[.625rem] sm:text-[.875rem]">Camama (Condomínio das Acácias, Casa J1)</span>
+              <span className="text-[.625rem] sm:text-[.875rem]">Luanda, Camama e Sequele</span>
             </div>
             <div className="flex items-center gap-3">
               <Button
