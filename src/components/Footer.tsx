@@ -74,15 +74,16 @@ const Footer = () => {
                 <span>Luanda,  Camama e Sequele</span>
               </li>
               <li className="flex items-start space-x-2 text-sm text-white">
-                <span>Camama (Condomínio das Acácias, Casa J1)</span>
+                <span>Camama (Condomínio das Acácias, Casa J1    
+                   (+244 927 228 993)</span>
               </li>
               <li className="flex items-start space-x-2 text-sm text-white">
-                <span>Centralidade do Sequele (Bloco 6, Prédio 5, Entrada B, Apto.: 001)</span>
+                <span>Centralidade do Sequele (Bloco 6, Prédio 5, Entrada B, Apto.: 001 (+244 930 292 592))</span>
               </li>
               <li className="flex items-center space-x-2 text-sm text-white">
                 <Phone className="w-4 h-4 text-white flex-shrink-0" />
-                <span>+244 927 228 993</span>
-                <span>+244 930 292 592</span>
+                <span></span>
+                <span></span>
               </li>
               <li className="flex items-center space-x-2 text-sm text-white">
                 <Mail className="w-4 h-4 text-white flex-shrink-0" />
