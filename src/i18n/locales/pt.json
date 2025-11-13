@@ -107,21 +107,21 @@
     "feature2": "Aprenda as competências mais recentes",
     "feature3": "Capacite a sua organização",
     "mission": "Missão",
-    "missionText": "Promover uma educação de qualidade, inclusiva e inovadora, respeitando o ritmo e as necessidades de cada criança.",
+    "missionText": " Transformar o ensino através da pesquisa, inovação e práticas baseadas em evidências que colocam a criança — e não o sistema — no centro da aprendizagem.",
     "vision": "Visão",
-    "visionText": "Ser referência em educação inovadora e desenvolvimento infantil em Angola e na África Austral.",
+    "visionText": "Tornar-se um centro africano de referência em pesquisa e inovação educacional, inspirando escolas, profissionais, famílias e decisores a repensar a forma como as crianças aprendem, crescem e florescem.",
     "values": "Valores",
     "valuesText": "Amor, respeito, inovação, inclusão e excelência educativa.",
     "historyHeader": "A Nossa História",
-    "historyParagraph1": "A Dream Yetu nasceu do sonho de transformar a educação em Angola criando um espaço onde cada criança pode aprender ao seu próprio ritmo, com amor, respeitoe dedicação.",
-    "historyParagraph2": " Desde o início, comprometemo-nos a oferecer programas educativos inovadores que respeitam a individualidade de cada aluno, promovendo não apenas o desenvolvimento académico, mas também o crescimento emocional e social.",
-    "historyParagraph3": "Acreditamos que a educação começa com amor, curiosidade e  respeito pelo ritmo de cada criança."
+    "historyParagraph1": "A Dream Yetu nasceu em 2020, em Angola, com o sonho de transformar a forma como as crianças aprendem e se desenvolvem. Começou como um pequeno projeto de ensino domiciliar e rapidamente se tornou uma referência em metodologias alternativas e inclusivas de ensino, e pelo número de alunos que formou durante a fase da pandemia (COVID19). ",
+    "historyParagraph2": " Hoje, a Dream Yetu atua como um espaço de aprendizagem, pesquisa e inovação educacional, oferecendo soluções personalizadas para diferentes perfis de alunos — incluindo crianças com necessidades especiais e famílias que optam pelo ensino domiciliar. O nosso compromisso é formar cidadãos criativos, conscientes e preparados para o futuro, promovendo uma educação mais humana, científica e transformadora inspirados na Disciplina Positiva.",
+    "historyParagraph3": ""
   },
   "stats": {
     "experience": "Anos de Experiência em Educação",
     "courses": "Cursos Online Inovadores",
     "teachers": "Profissionais Qualificados e especialistas",
-    "enrolled": "Alunos Inscritos nos Cursos"
+    "enrolled": "Alunos Inscritos"
   },
   "common": {
     "readMore": "Ler Mais"

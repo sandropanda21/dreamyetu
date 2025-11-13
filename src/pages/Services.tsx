@@ -101,41 +101,7 @@ const Services = () => {
         </div>
       </section>
 
-      <section className="pb-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto space-y-16">
-            <div className="bg-card p-8 rounded-2xl shadow-lg border-2 border-border animate-fade-in">
-              <div className="flex items-center space-x-4 mb-6">
-                <div className="w-16 h-16 rounded-2xl bg-orange-500 text-white flex items-center justify-center">
-                  <HomeIcon className="w-6 sm:w-8 h-6 sm:h-8" />
-                </div>
-                <h2 className="text-lg sm:text-3xl font-bold">{t('services.certifiedHomeschooling.title')}</h2>
-              </div>
-              <div className="space-y-4 text-muted-foreground">
-                <p>{t('services.certifiedHomeschooling.description')}</p>
-                <div className="grid md:grid-cols-2 gap-4 mt-6">
-                  <div className="bg-muted/50 p-4 rounded-lg">
-                    <h3 className="font-bold text-foreground mb-2">
-                      {t('services.certifiedHomeschooling.firstModality')}
-                    </h3>
-                    <p className="text-sm">
-                      {t('services.certifiedHomeschooling.firstModalityDescription')}
-                    </p>
-                  </div>
-                  <div className="bg-muted/50 p-4 rounded-lg">
-                    <h3 className="font-bold text-foreground mb-2">
-                      {t('services.certifiedHomeschooling.secondModality')}
-                    </h3>
-                    <p className="text-sm">
-                      {t('services.certifiedHomeschooling.secondModalityDescription')}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      
     </>
   );
 };
