@@ -3,8 +3,8 @@ import { Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import infantil1 from '@/assets/infantil1.jpeg';
-import infantil2 from '@/assets/infantil2.jpeg';
+import infantil1 from '../../public/infantil1.jpeg';
+import infantil2 from '../../public/infantil2.jpeg';
 import capetown from '../../public/galeeria1101.jpeg.jpeg'; 
 
 const AboutSection = () => {
